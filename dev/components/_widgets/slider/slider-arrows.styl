@@ -1,0 +1,57 @@
+.slider-arrow
+  width: r(96)
+  height: r(60)
+  cursor pointer
+  display inline-flex
+  align-items center
+  trans()
+
+  position relative
+  z-index 10
+
+  &:after
+    ba()
+    top 0
+    left 0
+    bottom 0
+    z-index -1
+    bg($dark)
+    width 0
+    trans()
+
+  svg
+    width r(14)
+    trans()
+    path
+      fill $wt
+  &.left
+    pl(24)
+    +mmin(768px)
+      &:hover
+        pl(14)
+  &.right
+    justify-content flex-end
+    pr(24)
+    +mmin(768px)
+      &:hover
+        pr(14)
+
+  &:hover
+    +mmin(768px)
+      &:after
+        width 100%
+        left auto
+        right 0
+
+
+  &.slider-arrow-dark
+    bg($dark)
+    &:after
+      bg($gray-dark)
+
+
+
+  &.slider-arrow-light
+    bg($brown)
+    &:after
+      bg($brown-light)

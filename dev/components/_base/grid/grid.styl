@@ -1,0 +1,44 @@
+.container
+  margin 0 calc(4.296875vw - .9375rem)
+  width auto
+  padding-right: r(15)
+  padding-left: r(15)
+  +pad()
+    margin 0 3.2552vw
+  +mob()
+    margin 0
+    pr(0)
+    pl(0)
+  &.container-slider-cart
+    margin 0
+    padding 0
+    +mob()
+      margin 0 -(r(5.5))
+    .row
+      margin 0
+      & [class*="col-"]
+        padding 0
+
+
+.col-padding
+  +mob()
+    padding 0 r(30)
+
+.col-cart-small-left
+  pt(45)
+  pl(16)
+  pr(1)
+  +xs()
+    display none
+.col-cart-small-right
+  pt(45)
+  pr(16)
+  pl(1)
+
+.hidden-pad
+  +pad()
+    display none
+.hidden-mob
+  +mob()
+    display none
+

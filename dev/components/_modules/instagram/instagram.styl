@@ -1,0 +1,74 @@
+.slider-instagram
+  mb(255)
+  +pad()
+    margin 0 calc(-3.2552vw - .938rem)
+    width calc(100% + 1.876rem + 6.5104vw)
+    position relative
+    top -7.5rem
+  +mob()
+    margin 0 -.375rem
+  &__slide
+    height r(607)
+    position relative
+    overflow hidden
+    +mob()
+      width r(294)
+      height r(300)
+      margin 0 r(6)
+    &_image
+      position absolute
+      width 100%
+      +mob()
+        display none !important
+      &.image1
+        top 0
+        left 0
+        max-width r(541)
+        z-index 50
+        +pad()
+          max-width: r(442)
+        +mob()
+          display block !important
+
+      &.image2
+        bottom 0
+        left r(211)
+        max-width r(256)
+        z-index 40
+        +pad()
+          left r(112)
+      &.image3
+        right r(270)
+        bottom 0
+        z-index 30
+        max-width r(391)
+        +pad()
+          max-width r(370)
+          right -.938rem
+      &.image4
+        right r(101)
+        bottom 0
+        z-index 20
+        max-width r(170)
+        +pad()
+          display none
+
+  .slider-arrow
+    position absolute
+    bottom r(291)
+    z-index 900
+    +pad()
+      bottom auto
+      top r(40)
+    //+mob()
+    //  display none
+    &.right
+      right: r(77)
+      +pad()
+        left auto
+        right r(85)
+    &.left
+      right r(174)
+      +pad()
+        left auto
+        right r(182)

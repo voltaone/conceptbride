@@ -1,0 +1,52 @@
+mixin select(array, className)
+    select(class= className)
+        each val in array
+            option= val
+
+mixin  select-group-designer()
+    .input-group.input-group-picker.input-group-catalog
+        select.select2-select-designer
+            option
+            option White by Vera Wang
+            option Isabelle Armstrong
+            option Ersa Atelier
+            option Cymbeline
+            option Ersa Atelier
+            option Cymbeline
+            option Daalarna
+            option Gevrin
+            option Sophia Tolli
+            option Cymbeline
+            option Charlie Brear
+            option Anna Campbell
+            option Inbal Dror
+            option Lazaro
+
+        .input-group_line
+        .input-group_error
+            | Выберите дату
+        .input-group_plus
+
+mixin  select-group-siluet()
+    .input-group.input-group-picker.input-group-catalog
+        select.select2-select-siluet
+            option
+            option White by Vera Wang
+            option Isabelle Armstrong
+            option Ersa Atelier
+            option Cymbeline
+            option Ersa Atelier
+            option Cymbeline
+            option Daalarna
+            option Gevrin
+            option Sophia Tolli
+            option Cymbeline
+            option Charlie Brear
+            option Anna Campbell
+            option Inbal Dror
+            option Lazaro
+
+        .input-group_line
+        .input-group_error
+            | Выберите дату
+        .input-group_plus

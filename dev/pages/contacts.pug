@@ -1,0 +1,40 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Concept Bride - Главная страница
+
+block content
+
+    section(data-bg='#ffffff').body-back
+        .spacer-200-xl
+
+        .container
+            .row
+                .col-sm-10.col-xl-7.rellax(data-rellax-speed='-8')
+
+                    .animation-view
+                        .box.box-contacts.wow
+                            h1.text-gradient Контакты
+                            .footer-data__address Украина, Киев ул.Олеся Гончара, 26
+
+                            ul.footer-data__phones
+                                li
+                                    +link-overline('+38 067 888 10 72')
+                                li
+                                    +link-overline('+38 067 888 10 72')
+                            .footer-data__overtime Время Работы:
+                            ul.footer-data__time
+                                li
+                                    | вт-пт: 11.00-20.00
+                                li
+                                    | сб: 10.00-19.00
+                            +btn-feedback('Обратная связь')
+
+
+                        .animation-view__wrapper.wow
+
+                .offset-sm-2.col-sm-10.offset-xl-6.col-xl-6
+                    +map()
+
+    +footer-simple-brown()

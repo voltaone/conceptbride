@@ -1,0 +1,71 @@
+.slider-about
+  mb(223)
+  mt(136)
+
+  .slide
+    pl(100)
+    +xs()
+      pl(0)
+  .slider-arrow
+    position absolute
+    bottom -(r(30))
+    &.right
+      right r(76)
+      +land()
+        right r(0)
+    &.left
+      right r(173)
+      +land()
+        right r(97)
+
+
+  .slick-dots
+    position absolute
+    bottom r(118)
+    left r(191)
+    display flex
+    +xs()
+      left r(15)
+      bottom r(100)
+    +land()
+      left r(145)
+    li
+      margin r(2)
+      padding r(5)
+      display block
+      width auto
+      height auto
+      button
+        display block
+        border-radius 50%
+        width: r(2)
+        height: r(2)
+        background-color: #ffffff;
+        color $tr
+        fs(0)
+        padding 0
+        opacity .2
+        trans()
+        &:hover
+          opacity 1
+      &.slick-active
+        button
+          opacity 1
+
+
+
+.slider-about-container
+  position relative
+  +xs()
+    margin-left -.938rem
+    margin-right -.938rem
+  .btn
+    position absolute
+    left 0
+    bottom -(r(30))
+    +xs()
+      left r(15)
+      right r(15)
+      width calc(100% - 1.875rem)
+    +land()
+      max-width r(320)

@@ -1,0 +1,90 @@
+
+blockquote
+  line-height: 1.86
+  position relative
+  z-index 10
+  display flex
+  mt(85)
+  mb(120)
+  pb(120)
+  pt(40)
+  +xs()
+    flex-wrap wrap
+  .quote-left
+    max-width 27%
+    +xs()
+      max-width 100%
+  .quote-right
+    pt(115)
+    pr(100)
+    position relative
+    z-index 5
+    +xs()
+      pt(0)
+      pr(0)
+    &:after
+      content '“'
+      position absolute
+      font-family $s-font
+      left -(r(18))
+      top -(r(6))
+      color: rgba(255, 255, 255, 0.1);
+      font-size: e(181.5)
+      font-weight: bold;
+      line-height: 1
+      letter-spacing: r(5.4)
+      z-index -1
+      +xs()
+        top -6.250rem
+
+
+  p
+    font-family $s-font, serif
+    font-style: italic;
+    font-size: e(14)
+    letter-spacing: r(0.4)
+    line-height: 1.86;
+    +xs()
+      mb(30)
+  h1
+    white-space nowrap
+    mb(55)
+    +xs()
+      mb(30)
+  &:after
+    ba()
+    top 0
+    bottom 0
+    right 0
+    left r(100)
+    z-index -1
+    bg(#f0f0f0)
+    opacity .1
+    +xs()
+      left -.938rem
+      right -.938rem
+
+
+
+
+
+//  padding r(15)
+//  position relative
+//  fs(16)
+//  &:before, &:after
+//    position absolute
+//    display block
+//    line-height 1
+//  &:before
+//    content open-quote
+//    left 0
+//    top 0
+//  &:after
+//    content close-quote
+//    right 0
+//    bottom 0
+//
+//cite
+//  fs(16)
+//  font-style italic
+//  co($gr)

@@ -1,0 +1,19 @@
+mixin input(placeholder)
+    input(type='text', placeholder= placeholder)
+
+mixin input-error(placeholder)
+    input(type='text', placeholder= placeholder).error
+
+mixin input-group(placeholder)
+    .input-group
+        +input(placeholder)
+        .input-group_line
+        .input-group_error
+            | Введите ваш номер телефона
+
+mixin input-group-error(placeholder)
+    .input-group
+        +input-error(placeholder)
+        .input-group_line
+        .input-group_error
+            | Введите ваш номер телефона

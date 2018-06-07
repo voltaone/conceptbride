@@ -1,0 +1,108 @@
+.navbar__panel
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  bg($dark)
+  z-index -1
+  trans()
+  pt(183)
+  pb(183)
+  display flex
+  align-items center
+  @extend $hidden
+  +pad()
+    pt(110)
+    pb(110)
+  +mob()
+    top r(114)
+    z-index 9999
+    pt(0)
+    pb(0)
+    display block
+  .container
+    width 100%
+    height 100%
+    +mob()
+      height auto
+    .row
+      height 100%
+      +mob()
+        height auto
+      .col-left
+        +mob()
+          padding 0
+      .col-right
+        +mob()
+          padding 0 r(27)
+  &__right
+    height 100%
+    display flex
+    justify-content space-between
+    flex-direction column
+    +mob()
+      pt(60)
+      pb(80)
+    &__social
+      +mob()
+        mt(60)
+      .social-list
+        pt(0)
+        +mob()
+          max-width 100%
+        li
+          +mob()
+            width 50%
+          .link-overline
+            co($wt50)
+            &:after
+              bg($wt50)
+            svg g
+              fill $wt50
+            &:hover
+              co($wt)
+              &:after
+                bg($wt)
+              svg g
+                fill $wt
+
+  &__menu
+    df(col)
+    height 100%
+    justify-content space-between
+    li
+      +mob()
+        mb(13)
+      .nav-link
+        display inline-block
+        position relative
+        z-index 40
+        font-size: e(18)
+        line-height: e(22)
+        letter-spacing: r(0.9)
+        color: $wt40
+        text-transform uppercase
+        &:before, &:after
+          ba()
+          top calc(50% - 1px)
+          width 0
+          height r(1)
+          bg($wt40)
+          z-index -1
+          trans()
+        &:before
+          left 0
+        &:after
+          right 0
+
+        &:hover
+          co($wt)
+          pl(21)
+          &:before, &:after
+            bg($wt)
+          &:before
+            width r(42)
+          &:after
+            width r(80)
+            transform translate3d(88px,0,0)

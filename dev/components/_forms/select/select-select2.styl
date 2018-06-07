@@ -1,0 +1,130 @@
+//.select2-container--default
+//  .select2-selection--single
+//    border r(1) solid #ccc
+//    border-radius 0
+//    height auto
+//    trans()
+//    &:focus
+//      outline none
+//      border-color blue
+//    .select2-selection__clear
+//      right r(20)
+//    .select2-selection__rendered
+//      co($bk)
+//      fs(16)
+//      line-height normal
+//      padding r(12) r(15) r(13)
+//    .select2-selection__arrow
+//      top calc(50% - 0.938rem)
+//      right r(9)
+//      b
+//        border-color: $bk transparent transparent transparent;
+//        trans()
+//
+//  .select2-results__option[aria-selected=true]
+//    margin-bottom 0
+//    bg($gr2)
+//    co($wt)
+//
+//  .select2-results__option--highlighted[aria-selected]
+//    bg(blue)
+//    co($wt)
+//
+//  .select2-results__option.select2-results__message
+//    bg($wt)
+//    fs(14)
+//    co(#999)
+//    padding r(12) r(10) r(13)
+//
+//  .select2-search--dropdown .select2-search__field
+//      fs(16)
+//      mb(12)
+//      border r(1) solid $gr2
+//      padding r(11) r(10) r(12)
+//
+//.select2-container--default.select2-container--open.select2-container--below .select2-selection--single
+//  border-color blue
+//  border-bottom-color $tr
+//
+//.select2-container--open .select2-dropdown--below
+//  border r(1) solid blue
+//  border-top 0
+//  border-radius 0
+//
+//.select2-results__option
+//  padding r(12) r(15) r(13)
+//  fs(16)
+//
+//.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+//  border-color: $bk transparent transparent transparent;
+//  transform rotate(180deg)
+//  border-width: 5px 4px 0 4px;
+
+
+.select2-container--open
+  .select2-dropdown--below
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+    width 100% !important
+    height 100%
+    z-index 9999
+    bg($tr)
+    padding r(230) r(476) 0 r(150)
+    +pad()
+      padding r(170) r(197) 0 r(97)
+    +mob()
+      padding r(120) r(8)
+
+.select2-container--default
+  .select2-results .select2-results__options
+    display flex
+    flex-wrap wrap
+    max-height 100%
+    li
+      flex 0 0 50%
+      max-width 50%
+      font-size: e(8)
+      font-weight: 600;
+      line-height: 2.75;
+      letter-spacing: r(2.4)
+      color: $wt50
+      text-transform uppercase
+      trans()
+      mb(22)
+      +land()
+        flex 0 0 33.33333%
+        max-width 33.333333%
+      +mob()
+        mb(5)
+  .select2-results__option--highlighted[aria-selected]
+    color $wt !important
+    bg($tr)
+  .select2-results__option[aria-selected=true]
+    bg($tr)
+
+  .select2-selection--single
+    border none
+    border-radius 0
+    bg($tr)
+    &:focus
+      outline none
+    .select2-selection__arrow
+      display none
+    .select2-selection__rendered
+      font-size: e(8)
+      font-weight: 600;
+      line-height: 2.75;
+      letter-spacing: r(2.4)
+      color: $wt
+      text-transform uppercase
+      pb(10)
+      &:focus
+        outline none
+    .select2-selection__placeholder
+      color $wt
+
+.select2-container .select2-selection--single
+  height 32px

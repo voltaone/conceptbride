@@ -1,0 +1,163 @@
+input
+  -webkit-appearance none
+  width 100%
+  font-size: e(8)
+  font-weight: 600;
+  line-height: 2.75;
+  letter-spacing: r(2.4)
+  co($ocean)
+  bg($tr)
+  border none
+  padding r(15) 0
+  trans()
+  &:-webkit-autofill
+    -webkit-box-shadow: inset 0 0 0 50px rgba(255, 255, 255, 0) !important
+    -webkit-text-fill-color: rgba(255, 255, 255, 0) !important
+  &:focus
+    outline none
+  +placeholder()
+    co($wt50)
+    text-transform uppercase
+
+.input-group
+  position relative
+  width 100%
+  mb(15)
+  &_line
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    height r(2)
+    &:after, &:before
+      ba()
+      right 0
+      left 0
+      height r(1)
+      bg($wt)
+      trans()
+    &:before
+      bottom r(1)
+    &:after
+      bottom r(2)
+      width 0
+      left auto
+  &_error
+    font-size: e(12)
+    font-style: italic;
+    font-family $s-font, serif
+    letter-spacing: r(0.4)
+    color: rgba(49, 48, 54, 0.5);
+    position absolute
+    top 100%
+    left 0
+    right 0
+    padding r(10) 0
+    trans()
+    visibility hidden
+    opacity 0
+  &_plus
+    position absolute
+    top calc(50% - 0.063rem)
+    right 0
+    width r(7)
+    height r(7)
+    z-index 1
+    &:after, &:before
+      ba()
+      width: r(7)
+      height: r(1)
+      bg($wt)
+      trans()
+    &:after
+      transform rotate(90deg)
+  input, textarea, .chosen-container
+    &:focus, &:hover
+      & + .input-group_line
+        &:after
+          width 100%
+  .chosen-container.chosen-with-drop
+    & + .input-group_line
+      &:after
+        width 100%
+  input.error, textarea.error
+    & + .input-group_line
+      opacity 0.75
+      &:after, &:before
+        bg($dark)
+        width 100%
+    & ~ .input-group_error
+      opacity 1
+      visibility visible
+
+.input-group-picker
+  input
+    position relative
+    z-index 2
+    &:focus
+      & ~ .input-group_plus
+        &:after
+          transform none
+
+  .chosen-container.chosen-with-drop
+    & ~ .input-group_plus
+      &:after
+        transform none
+  &:hover
+    .input-group_plus
+      &:after, &:before
+        bg($wt50)
+
+
+//&:hover
+//  co($wt)
+//  &:after
+//    width 100%
+
+//input[type=number]::-webkit-inner-spin-button,
+//input[type=number]::-webkit-outer-spin-button
+//  -webkit-appearance: none;
+//  margin: 0;
+//
+//input[type=number]
+//  -moz-appearance:textfield;
+//
+//input[type=reset]
+//  border 0
+//  cursor pointer
+//
+//label
+//  pl(16)
+//  fw(700)
+//  fs(e(16))
+//  mb(13)
+//
+
+//.input-group
+//  position relative
+//  mb(20)
+//  input
+//    mb(0)
+//    pl(45)
+//    &:focus + span
+//      co(blue)
+//  textarea
+//    pl(45)
+//    mb(0)
+//    & + span
+//      height 45px
+//    &:focus + span
+//      co(blue)
+//  select
+//    pl(45)
+//    mb(0)
+//  span
+//    position absolute
+//    top 0
+//    left 0
+//    display flex
+//    justify-content center
+//    align-items center
+//    width 45px
+//    height 100%
+//    trans()

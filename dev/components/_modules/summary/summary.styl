@@ -1,0 +1,29 @@
+.slider-summary
+  +pad()
+    position: relative;
+    top: -(r(140))
+  .slide
+    overflow: hidden;
+    +mob()
+      margin 0 r(15)
+      max-width r(294)
+    img
+      width calc(100% + 2.5rem)
+      margin-left -2.5rem
+
+  .slider-look__image-right
+    position static
+    width 100%
+
+  .slider-arrow
+    position absolute
+    bottom r(127)
+    z-index 200
+    +pad()
+      top: r(60)
+      bottom auto
+    &.left
+      left r(437)
+    &.right
+      left r(534)
+

@@ -1,0 +1,60 @@
+.box
+  bg($ocean)
+  padding r(90) r(100)  r(100) r(100)
+  +pad()
+    mb(50)
+    width calc(100% + .938rem + 3.2552vw)
+  +mob()
+    padding r(116) r(15) r(51)
+    mb(71)
+  p
+    co($gray-darker)
+
+  &.box-pink
+    bg($ocean-dark)
+    pb(78)
+    +mob()
+      margin-bottom 0
+    p
+      co($brown)
+
+  &.box-transparent
+    bg($tr)
+    pb(78)
+    p
+      co($brown)
+  &.box-link
+    min-height r(502)
+    p
+      mb(82)
+    .link-overline
+      co($gray-darker)
+      &:after
+        bg($gray-darker)
+
+  &.box-contacts
+    bg(#f4f4f4)
+    +pad()
+      mb(0)
+      z-index 60
+    .footer-data__address
+      mb(85)
+    .footer-data__phones
+      mb(54)
+    .btn
+      position absolute
+      bottom -(r(30))
+      left r(100)
+      +mob()
+        left r(15)
+        max-width calc(100% - 1.875rem)
+
+  &.box-dark
+    bg(rgba(240,240,240, .1))
+    padding r(136) r(117) r(148) r(97)
+    width 100%
+    mb(0)
+    +land()
+      padding r(105) r(60) r(148) r(50)
+    +xs()
+      padding r(105) r(15) r(150)

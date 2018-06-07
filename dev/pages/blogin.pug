@@ -1,0 +1,75 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Concept Bride - Про нас
+
+block content
+
+    +header-blogin()
+
+
+
+    section(data-bg='#a19d9c').body-back
+        article.container
+            .row
+                .offset-md-1.col-md-11.offset-xl-2.col-xl-8.col-padding.rellax(data-rellax-speed='0')
+                    p Да-да, ведь первый в Украине транк-шоу Модного Дома пройдет в бутике Concept Bride уже 20-23 октября. А это значит, что ты сможешь не только полюбоваться роскошными нарядами, но и примерить, и даже заказать платье бренда для индивидуального пошива.
+
+                    .img-pair
+                        +img('img/illus/blog/blogin2.png')
+                        +img('img/illus/blog/blogin3.png', 'rellax')
+                        p.img-pair_description GALA 805
+
+                    p Имя Galia Lahav широко известно по всему миру и является жемчужиной свадебной моды уже больше 30 лет. Наряды израильского дизайнера сочетают в себе традиционные кутюрные техники с современным кроем, неожиданными материалами и фасонами. Они по праву считаются новой эрой в свадебном мире и влюбляют в себя совершенно разных девушек.
+
+                    blockquote
+                        .quote-left
+                            h1 Galia Lahav
+                            p Desigenr
+                        .quote-right
+                            p “Говорят, что прикоснуться к звездам нельзя. Возможно. Но мы точно знаем, что скоро ты сможешь прикоснуться к чему-то такому же прекрасному и, кажется, недосягаемому”
+
+
+                    p Украинская модель Элла Кандыба из всех дизайнеров, для своей свадьбы выбрала именно платье от Galia Lahav. Николь Шерзингер, певица Керри Андервуд, актриса Оливия Манн и многие другие знаменитости неоднократно выбирали израильский бренд для красных дорожек. Пришла твоя очередь!
+
+                        .img-pair.reverse
+                            +img('img/illus/blog/blogin2.png')
+                            +img('img/illus/blog/blogin3.png', 'rellax')
+                            p.img-pair_description GALA 805
+
+                    h1 Concept Bride
+                    h2 21 и 22 октября двери Concept Bride будут открыты для тебя, прекрасная невеста.
+                    p Вместе, попивая игристое и пританцовывая под любимую музыку, мы подберем для тебя платье Galia Lahav, которое станет тем самым - о котором ты так долго мечтала!
+                    ul.footer-data__phones
+                        li
+                            +link-overline('+38 067 888 10 72')
+                        li
+                            +link-overline('+38 067 888 10 72')
+                    +btn('записаться на примерку')
+
+    section(data-bg='#a19d9c').body-back
+        .container
+            .row
+                .col-sm-6.col-cart-small-left
+                    +cart-article-left()
+                .col-sm-6.col-cart-small-right
+                    +cart-article-right()
+
+
+
+    //+likeheader-about()
+
+
+    section(data-bg='#a19d9c').body-back
+        .container
+            .row
+                +near-white()
+
+
+    +footer-simple()
+
+
+
+
+

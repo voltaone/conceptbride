@@ -1,0 +1,78 @@
+//footer {}
+
+.footer-data
+  position relative
+  height 100%
+  padding r(108) r(57) 0 r(100)
+  +pad()
+    pr(0)
+  +mob()
+    pt(95)
+    pr(15)
+    pl(15)
+  &__phones
+    df(row)
+    mb(25)
+    +mob()
+      flex-wrap wrap
+      mb(0)
+    li
+      mr(55)
+      +pad()
+        mr(30)
+      +mob()
+        mb(20)
+      &:last-child
+        mr(0)
+      .link-overline
+        fs(15.5)
+        fw(400)
+        letter-spacing r(0.8)
+        co($brown)
+        &:after
+          bg($brown)
+  &__address
+    co($brown)
+    fs(12)
+    letter-spacing r(0.6)
+    mb(65)
+  &__overtime
+    co($brown50)
+    fs(12)
+    letter-spacing r(0.6)
+    mb(12)
+  &__time
+    df(row)
+    +mob()
+      mb(30)
+    li
+      co($brown50)
+      fs(12)
+      letter-spacing r(0.6)
+      mr(44)
+
+  &__copyright
+    pb(30)
+    df(row)
+    justify-content space-between
+    position absolute
+    left r(100)
+    right 0
+    bottom 0
+    +mob()
+      position static
+      pt(30)
+    &_text, &_link
+      fs(12)
+      co($brown50)
+      letter-spacing r(0.6)
+    &_link
+      &:hover
+        co($brown)
+
+.footer-simple
+  pt(40)
+  .footer-data__copyright
+    position static
+    &_text, &_link
+      co($wt50)

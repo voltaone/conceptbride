@@ -1,0 +1,45 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Concept Bride - Каталог
+
+block content
+
+    +header-catalog()
+
+
+
+    section(data-bg='#a19d9c').body-back
+        .container.container-slider-cart
+            .row.catalog-row
+                .col.catalog-col
+                    +cart-product-left
+                .col.catalog-col.rellax(data-rellax-speed="1")
+                    +cart-product-right
+                .col.catalog-col
+                    +cart-product-right
+                .col.catalog-col.rellax(data-rellax-speed="1.25")
+                    +cart-product-left
+                .col.catalog-col
+                    +cart-product-left
+
+    section(data-bg='#a19d9c').body-back
+        .container
+            .row
+                .offset-md-1.col-md-10.col-xl-8
+                    +box-transparent('Еще в этом сезоне', 'Эта коллекция свадебных платьев которая затмит все вокруг. Удивительные свадебные платья служат достойной оправой для классической красоты, аристократичных манер, горделивой осанки и сиятельной улыбки.')
+                .offset-md-3.col-md-7.offset-xl-2.col-padding
+                    +btn('Посмотреть коллекцию')
+
+
+    +footer-simple()
+
+
+
+
+
+
+
+
+

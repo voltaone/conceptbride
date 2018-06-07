@@ -1,0 +1,51 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Concept Bride - Каталог
+
+block content
+
+    +header-designer()
+
+
+
+    section(data-bg='#a19d9c').body-back
+        .container.container-slider-cart
+            .row.catalog-row
+                .col.catalog-col
+                    +cart-product-left
+                .col.catalog-col.rellax(data-rellax-speed="1")
+                    +cart-product-right
+                .col.catalog-col
+                    +cart-product-right
+                .col.catalog-col.rellax(data-rellax-speed="1.25")
+                    +cart-product-left
+                .col.catalog-col
+                    +cart-product-left
+            .row
+                .offset-3.col-8
+                    +btn-more('Показать еще')
+
+
+    section(data-bg='#a19d9c').body-back
+        .container
+            .row
+                .offset-md-1.col-md-11.offset-xl-2.col-xl-7
+                    h2.text-gradient Другие дизайнеры
+            .row.justify-content-center
+                .col-md-6.col-xl-5.col-cart-small-left
+                    +cart-designer-small-left
+                .col-md-6.col-xl-5.col-cart-small-right
+                    +cart-designer-small-right
+
+    +footer-simple()
+
+
+
+
+
+
+
+
+

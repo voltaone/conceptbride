@@ -1,0 +1,51 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Concept Bride - Каталог
+
+block content
+
+
+
+    section(data-bg='#a19d9c').body-back.section-event.rellax(data-rellax-speed='0')
+        .container
+            .row
+                .offset-xl-2.col-xl-8.col-padding
+                    h1.text-gradient Предстоящие ивенты
+                    p Мы часто проводим мастеркласы и предпоказы новых коллекций
+                    +event()
+                    +event()
+
+            .spacer-200
+            .row
+
+                .offset-xl-2.col-xl-8.col-padding
+                    h1.text-gradient Прошедшие ивенты
+                    p Посмотри как мы проводим свои мероприятия и присоеденяйся к новым
+                    +event-past()
+                    +event-past()
+
+
+
+            .spacer-80
+            .row
+                .offset-xl-4.col-xl-4.col-padding
+                    +btn('Показать еще')
+            .spacer-200
+
+            +near-white()
+
+
+
+
+    +footer-simple()
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+mixin header-index()
+
+    header(data-bg='#a19d9c').header-index.body-back
+
+        .header-index__back
+            +img('img/illus/video/video1.png')
+
+        .container.container-header
+            .row
+                .offset-md-1.col-md-11.offset-xl-2.col-xl-7
+                    h1 Почувствуй сказку на себе
+                .offset-md-1.col-md-10.offset-xl-2.col-xl-6
+                    p Дружеская атмосфера, роскошные свадебные платья и высочайший уровень обслуживания.
+                    .btn-pair
+                        +btn('выбрать платье')
+                        +link-video('смотреть видео')
+
+mixin header-about()
+
+    header(data-bg='#a19d9c').header-index.body-back
+
+        .header-index__back
+            +img('img/illus/video/video2.png')
+
+        .container.container-header
+            .row
+                .offset-md-1.col-md-11.offset-xl-2.col-xl-7
+                    h1 Concept Bride - место где живет сказка
+                .offset-md-1.col-md-10.offset-xl-2.col-xl-6
+                        +link-video('смотреть видео')
+
+
+mixin header-blogin()
+
+    header(data-bg='#a19d9c').header-index.header-blogin.body-back
+
+        .header-index__back
+            +img('img/illus/blog/blogin1.png')
+
+        .container.container-header
+            .row
+                .offset-md-1.col-md-11.offset-xl-2.col-xl-8
+                    .blog__date 07 Ноябрь 2017
+                    h1 Транк-шоу свадебных платьев от всемирно известного дизайнера
+                        | &nbsp;
+                        ins Galia Lahav
+
+mixin likeheader-about()
+
+    section(data-bg='#a19d9c').header-index.header-like.body-back
+
+        .header-index__back
+            +img('img/illus/video/video3.png')
+
+        .container.container-header
+            .row
+                .offset-md-1.col-md-11.offset-xl-2.col-xl-7
+                    h1 У нас самое вкусное шампанское
+                    p Мы побалуем тебя разными угощениями, чтобы этот счастливый день сделать по-настоящему идеальным
+                .offset-md-1.col-md-10.offset-xl-2.col-xl-6
+                    .btn-pair
+                        +btn('Записаться на примерку')
+
+mixin header-catalog()
+
+    header(data-bg='#a19d9c').header-catalog.body-back
+        .container
+            .row
+                .offset-md-1.col-md-10.col-xl-6
+                    form.form-catalog
+                        +select-group-designer()
+                        +select-group-siluet()
+                .offset-md-1.col-md-11.offset-xl-2.col-xl-7
+                    h2.text-gradient Актуальное в этом сезоне
+                    p Эта коллекция свадебных платьев которая затмит все вокруг. Удивительные свадебные платья служат достойной оправой для классической красоты, аристократичных манер, горделивой осанки и сиятельной улыбки, горделивой осанки и сиятельной улыбки.
+
+mixin header-search()
+
+    header(data-bg='#a19d9c').header-catalog.body-back
+        .container
+            .row
+                .offset-md-1.col-md-10.col-xl-6
+                    form.form-catalog
+                        +select-group-designer()
+                        +select-group-siluet()
+                .offset-md-1.col-md-11.offset-xl-2.col-xl-7
+                    h1 Нет такого платья
+                    p Попробуйте выбрать другой тип или дизайнера платьев
+
+mixin header-designer()
+
+    header(data-bg='#a19d9c').header-catalog.body-back
+        .header-catalog__designer
+            +img('img/illus/designer/designer-back.png')
+
+        .container
+            .row
+                .offset-md-1.col-md-10.col-xl-6
+                    form.form-catalog
+                        +select-group-designer()
+                        +select-group-siluet()
+                    .spacer-200
+                .offset-md-1.col-md-11.offset-xl-2.col-xl-7
+                    h2.text-gradient Victoria Jane Iris
+                    p Не смотря на то, что она стремится не афишировать никакие направления своей жизни, кроме профессионального, новые коллекции этого нью-йоркского дизайнера – одни из самых обсуждаемых среди поклонников высокой свадебной моды.
+
+                    p Все её платья шокируют и удивляют своей экстравагантностью и невероятным сочетанием материалов и техник. Но главный секрет её нарядов в том, что какое бы платье из её коллекции не выбрать, оно так вскруживает голову и покоряет сердце, что после примерки, другие свадебные платья уже не могут удивить или впечатлить.
+
+mixin header-blog()
+
+    header(data-bg='#a19d9c').header-blog.body-back
+        .container
+            .row
+                .offset-md-1.col-md-11.offset-xl-2.col-xl-6
+                    h1.text-gradient Наш блог
+                    p Мы расскажем как быть на своей свадьбе действительно центром внимания жениха и гостей...так вскруживает голову и покоряет сердце, что после примерки, другие свадебные платья уже не могут удивить или впечатлить.
+
+
+mixin header-cartin()
+
+    header(data-bg='#a19d9c').header-cartin.body-back
+        .container
+            .row
+                .offset-lg-5.col-lg-7.offset-xl-6.col-xl-6.col-padding
+                    +link-overline('Назад к каталогу ')
+
+mixin header-collection()
+
+    header(data-bg='#a19d9c').header-collection.body-back
+        .container
+            .row
+                .offset-md-1.col-md-11.offset-xl-2.col-xl-6
+                    h1.text-gradient Коллекции аксессуаров
+                    p Специально для твоего удобства мы создали лучшие коллекции аксессуаров, которые идеально сочетаються между собой.
+
+
+
+

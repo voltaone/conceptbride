@@ -1,0 +1,57 @@
+.designer
+  position relative
+  +mob()
+    padding 0 r(15)
+    & + .btn-pair
+      padding 0 r(15)
+
+.designer-list
+  mt(130)
+  +pad()
+    mt(80)
+  +mob()
+    mt(30)
+  li
+    mb(47)
+  &_link
+    position relative
+    border-bottom r(1) solid rgba(140, 117, 114, .2)
+    display block
+    pb(31)
+    &:before
+      ba()
+      transform translate3d( -(r(215)) , 0, 0)
+      left 0
+      top r(11)
+      bg($brown)
+      width: r(153)
+      height r(1)
+      trans()
+      +pad()
+        width r(47)
+        transform translate3d( -(r(75)) , 0, 0)
+      +mob()
+        transform none
+        top -.875rem
+        width r(47)
+    &:hover
+      &:before
+        transform translate3d( (r(52)) , 0, 0)
+
+.designer-list-photo
+  position absolute
+  top r(130)
+  left -(r(200))
+  z-index -1
+  width: r(401)
+  height: r(601)
+  li
+    position absolute
+    top 0
+    left 0
+    trans()
+    @extend $hidden
+    img
+      max-width 100%
+    &.visible
+      @extend $visible

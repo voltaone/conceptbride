@@ -1,0 +1,19 @@
+mixin textarea(placeholder)
+    textarea(placeholder= placeholder rows='1')
+
+mixin textarea-error(placeholder)
+    textarea(placeholder= placeholder rows='1').error
+
+mixin textarea-group(placeholder)
+    .input-group
+        +textarea(placeholder)
+        .input-group_line
+        .input-group_error
+            | Введите ваше сообщение
+
+mixin textarea-group-error(placeholder)
+    .input-group
+        +textarea-error(placeholder)
+        .input-group_line
+        .input-group_error
+            | Введите ваше сообщение

@@ -1,0 +1,35 @@
+mixin navbar-panel()
+    .navbar__panel
+        .container
+            .row.justify-content-center
+                .offset-3.col-9.offset-sm-0.col-md-5.col-left
+                    ul.navbar__panel__menu
+                        li
+                            a(href='' title='').nav-link Свадебные платья
+                        li
+                            a(href='' title='').nav-link Вечерние платья
+                        li
+                            a(href='' title='').nav-link Аксессуары
+                        li
+                            a(href='' title='').nav-link Сервисы
+                        li
+                            a(href='' title='').nav-link Для мам
+                        li
+                            a(href='' title='').nav-link Для подружек
+                        li
+                            a(href='' title='').nav-link Ивенты
+                        li
+                            a(href='' title='').nav-link Блог
+                        li
+                            a(href='' title='').nav-link О нас
+                        li
+                            a(href='' title='').nav-link Контакты
+                .col-md-5.col-right
+                    .navbar__panel__right
+                        .navbar__panel__right__address
+                            h2.h2-nav Померяем лучшие платья вместе?
+                            p.h7 Киев ул.Олеся Гончара, 26
+                            +btn-border-wt('записаться на примерку')
+                        .navbar__panel__right__social
+                            p.h7 Мы в социальных сетях:
+                            +social-list()

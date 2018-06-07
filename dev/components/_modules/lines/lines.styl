@@ -1,0 +1,43 @@
+.line
+  position fixed
+  top 0
+  //bottom 0
+  width r(1)
+  opacity 0.1
+  background-color #f1f1f9
+  z-index 99999
+  height r(86)
+  &.line-1
+    left 12.2vw
+    +pad()
+      left: 13.1vw;
+    +mob()
+      left 4.375vw
+  &.line-2
+    left 19.9vw
+    +pad()
+      left 25.9vw
+    +mob()
+      left 22.5vw
+  &.line-3
+    right 19.9vw
+    +pad()
+      right: 16.1vw
+    +mob()
+      right 4.375vw
+
+    //
+    display none
+
+  &.line-scroll
+    top auto
+    left 8vw
+    bottom 10.15vw
+    bg($wt60)
+    opacity 1
+    height r(30)
+
+
+  //
+  //display none
+

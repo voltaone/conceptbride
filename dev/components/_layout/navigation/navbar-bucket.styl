@@ -1,0 +1,74 @@
+.navbar__bucket-panel
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  bg(#a19d9c)
+  z-index -1
+  trans()
+  pt(204)
+  pb(218)
+  overflow hidden
+  @extend $hidden
+  +mob()
+    pl(15)
+    pr(15)
+  &:before
+    ba()
+    top 0
+    height 100vmax
+    bottom 0
+    z-index -1
+    right 0
+    left: 51.2%;
+    bg(#aba7a6)
+    +mmax(991px)
+      display none
+  h1
+    mb(0)
+    +port()
+      text-align center
+
+  &__list
+    display flex
+    justify-content space-between
+    pr(52)
+    pb(20)
+    mt(85)
+    mb(5)
+    border-bottom r(1) solid rgba(240,240,240, .1)
+    +mmax(991px)
+      pr(0)
+
+.form-bucket
+  pt(12)
+  +mmax(991px)
+    mt(100)
+    position relative
+    &:before
+      ba()
+      top -(r(60))
+      height 100vh
+      bottom 0
+      z-index -1
+      left: -100vw
+      width 250vw
+      bg(#aba7a6)
+  p
+    mb(84)
+    +port()
+      ml(100)
+  &__time
+    justify-content space-between
+    display flex
+    pt(52)
+    pb(75)
+    .input-group-picker
+      &:first-child
+        flex 0 0 calc(60% - 1.375rem)
+        max-width calc(60% - 1.375rem)
+      &:last-child
+        flex 0 0 calc(40% - 1.375rem)
+        max-width calc(40% - 1.375rem)
+

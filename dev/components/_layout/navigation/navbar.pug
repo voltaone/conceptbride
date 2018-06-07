@@ -1,0 +1,30 @@
+mixin navbar()
+    nav.navbar
+        .navbar__menu
+            a(href='#' title='')#menu-trigger.navbar__menu__link
+                .navbar__menu__link_menu
+                    | menu
+                .navbar__menu__link_close
+                    | close
+
+
+        .navbar__lang
+            ul.navbar__lang__list
+                li
+                    +a('ru', 'navbar__lang__list_link')
+                li
+                    +a('ua', 'navbar__lang__list_link')
+                li
+                    +a('en', 'navbar__lang__list_link')
+
+        .navbar__logo
+            a(href='' title='').navbar__logo_link
+                include ../../_svgs/logo.svg
+        .navbar__phone
+            +a('+38 067 888 10 72', 'navbar__phone_link')
+
+        .navbar__bucket.navbar__bucket-empty
+            include ../../_svgs/dress_room_item.svg
+            .navbar__bucket_counter 3
+            .navbar__bucket_close#menu-bucket
+                include ../../_svgs/close.svg

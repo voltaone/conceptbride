@@ -1,0 +1,94 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Concept Bride - Приклади
+
+block content
+
+    section(style='background-color: #3d3534')
+        .container
+            .row
+                .col-6
+                    h1 h1
+                    h2 h2
+                    h3 h3
+                    h4 h4
+                    h5 h5
+                    h6 h6
+
+                .col-6
+                    .h7 h7
+                    .h8 h8
+                    .h9 h9
+                    .h10 h10
+                    p Regular text in paragraph
+                .col-6
+                    +btn('записаться на примерку')
+
+                    +btn-border('записаться на примерку')
+
+                    +btn-border-wt('записаться на примерку')
+                    +btn-feedback('Обратная связь')
+                    +link-video('смотреть видео')
+                    +arrow-left-dark
+                    +arrow-right-dark
+                    +arrow-left-light
+                    +arrow-right-light
+                    +basket
+                .col-6
+                    +link-overline('Посмотреть')
+                    br
+                    +link-overline-icon-fb('Посмотреть')
+                    br
+                    .cart__front_designer Designer:
+                    +link-line-italic('Victoria Jane Iris')
+                    br
+                    +link-line('by VOLTA')
+                    br
+                    +link-designer('Galia Lahav')
+            .row
+                .col-6
+                    +cart-article-left
+                .col-6
+                    +cart-article-right
+                .col-6
+                    +cart-product-small-left
+                .col-6
+                    +cart-product-small-right
+                .col-6
+                    +cart-product-left
+                .col-6
+                    +cart-product-right
+                .col-6
+                    +blog
+            .row
+                .col-6
+                    +input-group('Номер телефона')
+                    +input-group-error('Номер телефона')
+                .col-6
+                    +textarea-group('Ваш текст')
+                    +textarea-group-error('Ваш текст')
+                .col-6
+                    +datepicker('Дата примерки')
+                .col-6
+                    +timepicker('Время')
+                .col-12
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+

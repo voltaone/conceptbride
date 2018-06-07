@@ -1,0 +1,90 @@
+html
+  font-size 1.25vw
+  +pad()
+    font-size 2.08342vw
+
+  +land()
+    font-size 2.81695vw
+
+  +xs()
+    font-size 5vw
+
+
+
+html, body
+  overflow-x hidden
+
+body
+  font(r(16), 400, normal)
+  co($bk)
+  font-family $m-font, sans-serif
+  overflow-y: hidden;
+  trans()
+  bg($gr)
+  -webkit-overflow-scrolling: touch;
+
+  &.open
+    overflow hidden !important
+    .navbar__panel
+      overflow-y scroll !important
+      max-width 100vw
+      z-index 999
+      @extend $visible-1
+
+
+    .navbar__menu__link_menu
+      display none
+    .navbar__menu__link_close
+      display block
+
+  &.open-bucket
+    overflow hidden !important
+
+    .navbar__menu, .navbar__lang, .navbar__logo, .navbar__phone
+      @extends $hidden
+
+    .navbar__bucket-panel
+      overflow-y scroll !important
+      max-width 100vw
+      z-index 999
+      @extend $visible-1
+
+    .navbar__bucket
+      bg(#313036)
+      //transform translate3d(-15px, 0, 0)
+      &_close
+        opacity 1
+        transform translate3d(-100%,0,0)
+
+
+html.open, html.open-bucket
+  overflow hidden !important
+
+
+.zi-40
+  position relative
+  z-index 40
+
+#ascrail2000, #ascrail2000-hr
+  display none !important
+
+.spacer-80
+  height r(80)
+
+.spacer-200
+  height r(200)
+
+.spacer-200-xl
+  height r(200)
+  +pad()
+    height r(100)
+  +mob()
+    display none
+
+.spacer-400
+  height r(400)
+  +port()
+    display none
+  +mob()
+    display none
+

@@ -1,0 +1,51 @@
+mixin li-a(text, className)
+    li
+        a(href='' title='' class= className)= text
+
+mixin a(text, className)
+    a(href='' title='' class= className)= text
+
+mixin link-line(text)
+    a(href='' title='').link-line= text
+
+mixin link-line-italic(text)
+    a(href='' title='').link-line.link-italic= text
+
+mixin link-overline(text)
+    a(href='' title='').link-overline= text
+
+mixin link-overline-icon-fb(text)
+    a(href='' title='').link-overline.link-overline-icon
+        include ../../_svgs/facebook.svg
+        = text
+
+mixin link-overline-icon-inst(text)
+    a(href='' title='').link-overline.link-overline-icon
+        include ../../_svgs/instagram.svg
+        = text
+
+mixin link-overline-svg-right()
+    a(href='' title='').link-overline.link-overline-svg
+        include ../../_svgs/arrow_right.svg
+        | следующая запись
+
+mixin link-overline-svg-left()
+    a(href='' title='').link-overline.link-overline-svg.left
+        include ../../_svgs/arrow_left.svg
+        | предыдущая запись
+
+mixin nav-link(text)
+    a(href='' title='').nav-link
+        = text
+
+mixin link-video(text)
+    a(href='' title='').link-video
+        .link-video_play
+            include ../../_svgs/play.svg
+        .link-video_text
+            = text
+
+mixin link-designer(text)
+    a(href='' title='').link-designer
+        = text
+

@@ -1,0 +1,95 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Concept Bride - Каталог
+
+block content
+
+    +header-cartin()
+
+    section(data-bg='#a19d9c').body-back.section-cartin
+        .container
+            .row
+                .offset-md-1.offset-lg-0.offset-xl-1.col-lg-5.col-padding
+                    .cart-in__image
+                        .animation-view.cart-in__image__main
+                            a(href="img/illus/cartin/cartin1.png" data-fancybox="images" data-caption="My caption").wow
+                                +img('img/illus/cartin/cartin1.png')
+
+
+                            .animation-view__wrapper.wow
+                        .animation-view.rellax(data-rellax-speed='1')
+                            a(href="img/illus/cartin/cartin2.png" data-fancybox="images" data-caption="My caption").wow
+                                +img('img/illus/cartin/cartin2.png')
+                            .animation-view__wrapper.wow
+                        .animation-view.rellax(data-rellax-speed='2')
+                            a(href="img/illus/cartin/cartin3.png" data-fancybox="images" data-caption="My caption").wow
+                                +img('img/illus/cartin/cartin3.png')
+                            .animation-view__wrapper.wow
+                        .animation-view.rellax(data-rellax-speed='2.3')
+                            a(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").link-video-cart.wow
+                                +img('img/illus/cartin/cartin4.png')
+                                .link-video-cart__play
+                                    include ../components/_svgs/play.svg
+                            .animation-view__wrapper.wow
+                .offset-md-1.col-md-10.offset-lg-0.col-lg-7.col-xl-4.col-padding
+                    .cart-in
+                        .cart__front
+
+                            .cart__front_double
+                                div
+                                    .cart__front_designer Designer:
+                                    +link-line-italic('Victoria Jane Iris')
+                                div
+                                    .cart__front_designer Тип платья:
+                                    +link-line-italic('А-образное')
+
+                            .cart__front_double
+                                h2 WJ 17612
+                                h4 86 000 грн
+
+                            p Это роскошное платье посвящается всем поклонницам экстравагантных нарядов. Главное в нем – декорированный темно...
+
+                            ul.cart__front__sizes
+                                li
+                                    +a('M', 'cart__front__sizes_link')
+                                li
+                                    +a('S', 'cart__front__sizes_link')
+                                li
+                                    +a('L', 'cart__front__sizes_link')
+                                li
+                                    +a('XL', 'cart__front__sizes_link')
+
+
+                        +btn('ДОбавить в гардероб')
+                        +btn-border-wt('записаться на примерку')
+
+    section(data-bg='#d9d8d7').body-back
+        .container
+            .row
+                .col-12
+                    +slider-look()
+
+    section(data-bg='#a19d9c').body-back
+        .container
+            .row
+                .offset-md-1.col-md-10.col-xl-8.col-padding
+                   h2.text-gradient Еще в этом сезоне
+            .row.justify-content-center
+                .col-sm-6.col-xl-5.col-cart-small-left
+                    +cart-product-small-left()
+                .col-sm-6.col-xl-5.col-cart-small-right
+                    +cart-product-small-right()
+
+
+    +footer-simple()
+
+
+
+
+
+
+
+
+

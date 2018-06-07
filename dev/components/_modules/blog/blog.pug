@@ -1,0 +1,9 @@
+mixin blog(img, heading, text)
+    .blog.rellax
+        .blog__image
+            +img(img)
+        .blog__date
+            | 07 Ноября 2018
+        h2= heading
+        p= text
+        +link-overline('Читать полностью')

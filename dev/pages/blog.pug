@@ -1,0 +1,47 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Concept Bride - Каталог
+
+block content
+
+    +header-blog()
+
+
+    section(data-bg='#a19d9c').body-back
+        .container
+            .row
+                .offset-xl-2.col-xl-9.col-padding
+                    h2.text-gradient.text-center.mb-100 2018
+                    .row.blog-row
+                        .blog-item.col-sm-6
+                            +blog('img/illus/blog/blog2.png', '1Транк-шоу свадебных платьев от всемирно известного дизайнера Galia Lahav', 'Мы расскажем как быть на своей свадьбе действительно центром внимания жениха и гостей..')
+                        .blog-item.col-sm-6
+                            +blog('img/illus/blog/blog3.png', '2Транк-шоу свадебных платьев от всемирно известного дизайнера Galia Lahav', 'Мы расскажем как быть на своей свадьбе действительно центром внимания жениха и гостей..')
+                        .blog-item.col-sm-6
+                            +blog('img/illus/blog/blog4.png', '3Транк-шоу свадебных платьев от всемирно известного дизайнера Galia Lahav', 'Мы расскажем как быть на своей свадьбе действительно центром внимания жениха и гостей..')
+                        .blog-item.col-sm-6
+                            +blog('img/illus/blog/blog5.png', '4Транк-шоу свадебных платьев от всемирно известного дизайнера Galia Lahav', 'Мы расскажем как быть на своей свадьбе действительно центром внимания жениха и гостей..')
+                        .blog-item.col-sm-6
+                            +blog('img/illus/blog/blog1.png', '5Транк-шоу свадебных платьев от всемирно известного дизайнера Galia Lahav', 'Мы расскажем как быть на своей свадьбе действительно центром внимания жениха и гостей..')
+                        .blog-item.col-sm-6
+                            +blog('img/illus/blog/blog1.png', '6Транк-шоу свадебных платьев от всемирно известного дизайнера Galia Lahav', 'Мы расскажем как быть на своей свадьбе действительно центром внимания жениха и гостей..')
+                    .spacer-400
+                    +btn('Показать еще')
+                    .spacer-200
+
+                +near-white()
+
+
+
+    +footer-simple()
+
+
+
+
+
+
+
+
+

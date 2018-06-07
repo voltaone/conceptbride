@@ -1,0 +1,117 @@
+.chosen-rtl .chosen-search input[type="text"],
+.chosen-container-single .chosen-single abbr,
+.chosen-container-single .chosen-single div b,
+.chosen-container-single .chosen-search input[type="text"],
+.chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+.chosen-container .chosen-results-scroll-down span,
+.chosen-container .chosen-results-scroll-up span {
+  background-image: url("../img/chosen/chosen-sprite.png") !important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  .chosen-rtl .chosen-search input[type="text"],
+  .chosen-container-single .chosen-single abbr,
+  .chosen-container-single .chosen-single div b,
+  .chosen-container-single .chosen-search input[type="text"],
+  .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+  .chosen-container .chosen-results-scroll-down span,
+  .chosen-container .chosen-results-scroll-up span {
+    background-image: url("../img/chosen/chosen-sprite@2x.png") !important;
+  }
+}
+
+.chosen-container
+  width 100%
+  font-size r(16)
+  &:focus
+    outline none
+  .chosen-results
+    padding r(60) r(15)
+    margin 0
+
+.chosen-container-single
+  .chosen-single
+    background $tr !important
+    padding 0
+    height auto
+    border-radius 0
+    border none !important
+    box-shadow none
+    trans()
+    span
+      line-height 2.75
+      padding r(15) 0
+      co($wt)
+      fs(8)
+      fw(600)
+      letter-spacing r(2.4)
+      text-transform uppercase
+    div
+      display none
+  .chosen-default
+    span
+      opacity .5
+
+//
+.chosen-container-single
+  .chosen-search
+    display none
+    input[type='text']
+      display none
+
+//
+.chosen-container.chosen-container-active
+  box-shadow none
+  .chosen-single
+    box-shadow none
+    border none
+    background none
+
+.chosen-container-single .chosen-drop
+  border-radius 0
+  border none
+  border-top 0
+  padding 0
+  box-shadow none
+  bg($drop)
+
+  .active-result
+    padding r(10) 0 r(11)
+    text-align center
+    fs(10)
+    co($dark)
+    &.highlighted
+      co($wt)
+      background $dark
+  .result-selected
+    bg($gray)
+    co($wt)
+
+
+.chosen-container-single .chosen-default span
+  opacity 1
+  co($wt50)
+  text-transform uppercase
+  font-size: e(8)
+  font-weight: 600;
+  line-height: 2.75;
+  letter-spacing: r(2.4)
+
+//.input-group-catalog
+//  .chosen-container-single .chosen-drop
+//    position fixed
+//    top 0
+//    left 0
+//    right 0
+//    bottom 0
+//    height: 100%;
+//    bg($tr)
+//    padding-top 200px
+//    z-index 9999
+//  .chosen-container .chosen-results
+//    padding 0
+//    display flex
+//    flex-wrap: wrap
+//    .active-result
+//      flex 0 0 50%
+//      max-width 50%

@@ -1,0 +1,194 @@
+a
+  text-decoration none
+  font-family $m-font, sans-serif
+  trans()
+  &:hover
+    text-decoration none
+  &:focus
+    text-decoration none
+    outline none
+
+.link-logo
+  display block
+  max-width r(50)
+  img
+    width 100%
+
+.link-overline
+  font-size: e(8)
+  font-weight: 600;
+  line-height: e(22)
+  letter-spacing: r(2.4)
+  pr(9)
+  co($wt)
+  display inline-block
+  position relative
+  text-transform uppercase
+  z-index 10
+  trans()
+  &:after
+    ba()
+    width: 40%;
+    height: r(1)
+    bg($wt)
+    right 0
+    top calc(50% - .063rem)
+    opacity 0
+    transform translate3d(100%, 0, 0)
+    trans()
+    z-index -1
+    visibility hidden
+  &:hover
+    co($wt)
+    &:after
+      opacity 1
+      transform none
+      visibility visible
+  &.link-overline-icon
+    co($brown-light)
+    pl(22)
+    svg
+      width auto
+      height r(12)
+      position absolute
+      left 0
+      top calc(50% - 6px)
+      g
+        fill $brown-light
+    &:after
+      bg($brown-light)
+  &.link-overline-svg
+    pl(45)
+    svg
+      position absolute
+      top calc(50% - 4px)
+      left 0
+      width r(14)
+      height auto
+      trans()
+      path
+        fill $wt
+    &:hover
+      svg
+        transform translate3d(10px,0,0)
+    &.left
+      &:hover
+        svg
+          transform translate3d(-10px,0,0)
+
+
+
+
+.link-line
+  co($brown50)
+  font-size: e(12)
+  line-height: e(22)
+  letter-spacing: r(0.6)
+  display inline-block
+  position relative
+  z-index 10
+  &:after
+    ba()
+    height r(1)
+    left 0
+    right 0
+    bottom 0
+    width 0
+    bg($brown50)
+    trans()
+  &:hover
+    opacity 1
+    co($brown)
+    &:after
+      width 100%
+      bg($brown)
+
+  &.link-italic
+    font-family $s-font, sans-serif
+    font-style: italic;
+    letter-spacing: r(0.4)
+    color: $wt75
+    &:after
+      bg($wt75)
+    &:hover
+      co($wt)
+      &:after
+        width 100%
+        bg($wt)
+
+.link-video
+  display inline-flex
+  align-items center
+  &_play
+    display flex
+    justify-content center
+    align-items center
+    width: r(59)
+    height: r(59)
+    border r(1) solid $wt50
+    mr(29)
+    trans()
+    svg path
+      trans()
+      opacity 1
+      fill $wt75
+  &_text
+    co($wt)
+    text-transform uppercase
+    font-size: e(8)
+    font-weight: 600;
+    line-height: e(22)
+    letter-spacing: r(2.4)
+  &:hover
+    .link-video_play
+      border-color $wt
+      svg path
+        fill $wt
+
+.link-designer
+  font-family: $s-font, sans-serif
+  font-size: e(42)
+  font-weight: bold;
+  line-height: e(22)
+  letter-spacing: r(1.3)
+  color: $wt;
+  position relative
+  display inline-block
+  &:after, &:before
+    ba()
+    right 0
+    left 0
+    height r(1)
+    bg($wt)
+    trans()
+  &:before
+    bottom r(1)
+  &:after
+    bottom r(2)
+    width 0
+  &:hover
+    co($wt)
+    &:after
+      width 100%
+
+.link-video-cart
+  display block
+  position relative
+  &__play
+    bg($dark)
+    position absolute
+    right 0
+    top 0
+    bottom 0
+    width r(54)
+    display flex
+    justify-content center
+    align-items center
+  img
+    float: right
+  &:hover
+    .link-video-cart__play
+      bg(#7b7b80)
+
+
+

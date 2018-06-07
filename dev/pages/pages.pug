@@ -1,0 +1,22 @@
+extend layouts/_layout-pages.pug
+
+block title
+    | Concept Bride - Сторінки
+
+
+block content
+
+    -var n = 1
+
+    -array = [{name: 'Типові блоки', href: 'examples.html'}, {name: 'Головна', href: 'index.html'}, {name: 'Каталог', href: 'catalog.html'}, {name: 'Каталог Дизайнер', href: 'catalog-designer.html'}, {name: 'Каталог Поиск', href: 'catalog-search.html'}, {name: 'Блог', href: 'blog.html'}, {name: 'Коллекция', href: 'collection.html'}, {name: 'Продукт', href: 'catalogin.html'}, {name: 'Про нас', href: 'about.html'}]
+
+    section
+        .container
+            .row
+                each val in array
+                    .col-md-4.col-lg-3
+                        a(href= val.href title='' target='_blank' style='margin-bottom:25px').btn
+                            = n++
+                            | .
+                            | &nbsp;
+                            = val.name

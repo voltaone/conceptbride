@@ -1,0 +1,41 @@
+mixin box-btn(heading, text, btn)
+    .animation-view
+        .box.wow
+            h2.text-gradient= heading
+            p= text
+
+            .btn-pair
+                +btn-border(btn)
+        .animation-view__wrapper.wow
+
+
+mixin box(heading, text)
+    .animation-view
+        .box.wow
+            h2.text-gradient= heading
+            p= text
+        .animation-view__wrapper.wow
+
+mixin box-pink(heading, text, btn)
+    .animation-view
+        .box.box-pink.wow
+            h2.text-gradient= heading
+            p= text
+
+            +social-list()
+        .animation-view__wrapper.wow
+
+mixin box-transparent(heading, text, btn)
+    .box.box-transparent
+        h2.text-gradient= heading
+        p= text
+
+
+mixin box-link(heading, text, link)
+    .animation-view
+        .box.box-link.wow
+            h2.text-gradient= heading
+            p= text
+
+            +link-overline(link)
+        .animation-view__wrapper.wow

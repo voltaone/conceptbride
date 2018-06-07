@@ -1,0 +1,43 @@
+.info
+  position absolute
+  right 0
+  top 0
+  z-index 200
+  &__icon
+    position absolute
+    right 0
+    top 0
+    width r(60)
+    height r(60)
+    display flex
+    align-items center
+    justify-content center
+    bg($ocean-dark)
+    trans()
+    z-index 10
+    cursor pointer
+    +mob()
+      width r(30)
+      height r(30)
+    &:hover
+      bg($brown)
+      co($ocean-dark)
+      & + .info__panel
+        @extend $visible
+
+  &__panel
+    width r(354)
+    bg($ocean-dark)
+    padding r(131) r(85) r(81) r(64)
+    trans()
+
+    @extend $hidden
+
+    +pad()
+      padding r(79) r(45) r(40) r(32)
+
+    +mob()
+      padding r(25)
+      width 100%
+      height 100%
+      fs(14)

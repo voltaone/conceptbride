@@ -1,0 +1,568 @@
+
+<!--mixin slider-instagram-slide()-->
+<!--    div-->
+<!--        .slider-instagram__slide-->
+<!--            .animation-view-->
+<!--                +img('img/illus/instagram/instagram1.png', 'slider-instagram__slide_image image1 wow')-->
+<!--                .animation-view__wrapper.wow-->
+<!--            .animation-view-->
+<!--                +img('img/illus/instagram/instagram2.png', 'slider-instagram__slide_image image2 wow')-->
+<!--                .animation-view__wrapper.wow-->
+<!--            .animation-view-->
+<!--                +img('img/illus/instagram/instagram3.png', 'slider-instagram__slide_image image3 wow')-->
+<!--                .animation-view__wrapper.wow-->
+<!--            .animation-view-->
+<!--                +img('img/illus/instagram/instagram4.png', 'slider-instagram__slide_image image4 wow')-->
+<!--                .animation-view__wrapper.wow--><!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex">
+    <meta name="rating" content="GENERAL">
+    <base href="">
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="language" content="">
+    <!-- ogp facebook-->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="img/ogp/OGP_Facebook.png">
+    <!-- ogp twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:image:src" content="img/ogp/OGP_Twitter.png">
+    <meta name="twitter:description" content="">
+    <!--link(rel='canonical' href='')-->
+    <!-- title-->
+    <title>Concept Bride - Каталог
+    </title>
+    <!-- favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- style-->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- modernizr-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div id="preloader">
+      <div id="preloader-load"></div>
+    </div>
+    <script type="text/javascript">
+      var preloader = document.getElementById("preloader-load");function fadeOutnojquery(el) {
+          el.style.opacity = 1;
+          var interpreloader = setInterval(function () {
+              el.style.opacity = el.style.opacity - 0.05;
+              if (el.style.opacity <= 0.05) {
+                  clearInterval(interpreloader);
+                  preloader.style.display = "none";
+              }
+          }, 16);
+      }window.onload = function () {
+          setTimeout(function () {
+              fadeOutnojquery(preloader);
+          }, 1000);
+      };
+    </script>
+    <div class="line line-1"></div>
+    <div class="line line-2"></div>
+    <div class="line line-3"></div>
+    <div class="line line-scroll"></div>
+    <nav class="navbar">
+      <div class="navbar__menu"><a class="navbar__menu__link" href="#" title="" id="menu-trigger">
+          <div class="navbar__menu__link_menu">menu</div>
+          <div class="navbar__menu__link_close">close</div></a></div>
+      <div class="navbar__lang">
+        <ul class="navbar__lang__list">
+          <li><a class="navbar__lang__list_link" href="" title="">ru</a>
+          </li>
+          <li><a class="navbar__lang__list_link" href="" title="">ua</a>
+          </li>
+          <li><a class="navbar__lang__list_link" href="" title="">en</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__logo"><a class="navbar__logo_link" href="" title=""><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 145 63" style="enable-background:new 0 0 145 63;" xml:space="preserve">
+<g id="concept">
+	<g>
+		<path d="M55.0595703,37.9297523h5.3369141c1.3603516,0,2.4306641,0.3740234,3.1103516,1.0541992
+			c0.5273438,0.5268555,0.7998047,1.1728516,0.7998047,2.0058594c0,1.4277344-0.8164062,2.1923828-1.7001953,2.6513672
+			C64,44.1172523,64.96875,44.9160805,64.96875,46.5650063c0,2.125-1.75,3.2636719-4.4023438,3.2636719h-5.5068359V37.9297523z
+			 M59.9716797,42.9444008c1.3427734,0,2.2441406-0.5268555,2.2441406-1.6489258
+			c0-0.9350586-0.7480469-1.5126953-2.0908203-1.5126953h-3.0087891v3.1616211H59.9716797z M60.5839844,47.9756508
+			c1.4277344,0,2.2939453-0.5605469,2.2939453-1.6655273c0-1.0029297-0.7988281-1.5981445-2.4472656-1.5981445h-3.3144531v3.2636719
+			H60.5839844z"/>
+		<path d="M73.2832031,37.9297523h5.3027344c2.7880859,0,4.4199219,1.4960938,4.4199219,3.7905273
+			c0,1.9550781-1.1728516,3.1279297-2.8388672,3.6040039l3.2128906,4.5043945h-2.4648438l-2.9580078-4.1474609h-2.5830078v4.1474609
+			h-2.0908203V37.9297523z M78.4335938,43.8281898c1.4951172,0,2.4472656-0.7817383,2.4472656-2.0229492
+			c0-1.2744141-0.9179688-1.9716797-2.4648438-1.9716797h-3.0419922v3.9946289H78.4335938z"/>
+		<path d="M91.6425781,37.9297523h2.0908203v11.8989258h-2.0908203V37.9297523z"/>
+		<path d="M102.8632812,37.9297523h4.4365234c3.7392578,0,6.3232422,2.5668945,6.3232422,5.949707
+			c0,3.3486328-2.5839844,5.9492188-6.3232422,5.9492188h-4.4365234V37.9297523z M107.2998047,47.9248695
+			c2.4980469,0,4.1298828-1.6826172,4.1298828-4.0454102c0-2.3291016-1.6318359-4.0458984-4.1298828-4.0458984h-2.3457031v8.0913086
+			H107.2998047z"/>
+		<path d="M122.1064453,37.9297523h8.8212891v1.8701172h-6.7304688v3.0932617h5.9658203v1.8701172h-5.9658203v3.1958008h6.8154297
+			v1.8696289h-8.90625V37.9297523z"/>
+	</g>
+</g>
+<g id="bride">
+	<path d="M13.7192383,18.2114887c0-3.3828125,2.5327148-6.1533203,6.1362305-6.1533203
+		c2.1928711,0,3.5185547,0.7646484,4.6577148,1.8525391l-1.3427734,1.546875
+		c-0.9521484-0.8837891-1.972168-1.4790039-3.3320312-1.4790039c-2.2773438,0-3.9262695,1.8701172-3.9262695,4.2329102
+		c0,2.3286133,1.6489258,4.2324219,3.9262695,4.2324219c1.4619141,0,2.3969727-0.5947266,3.4169922-1.546875l1.3427734,1.3598633
+		c-1.2407227,1.2919922-2.6005859,2.1079102-4.8276367,2.1079102C16.3027344,24.364809,13.7192383,21.6621723,13.7192383,18.2114887
+		z"/>
+	<path d="M31.4501953,18.2114887c0-3.3486328,2.5834961-6.1533203,6.2382812-6.1533203s6.2045898,2.7705078,6.2045898,6.1533203
+		c0,3.3486328-2.5839844,6.1533203-6.2382812,6.1533203C34,24.364809,31.4501953,21.5938129,31.4501953,18.2114887z
+		 M41.7001953,18.2114887c0-2.3120117-1.6831055-4.2329102-4.0454102-4.2329102c-2.362793,0-4.0117188,1.887207-4.0117188,4.2329102
+		c0,2.3115234,1.6826172,4.2324219,4.0454102,4.2324219S41.7001953,20.5571918,41.7001953,18.2114887z"/>
+	<path d="M51.9521484,12.2617817h1.9379883l6.3740234,8.2270508v-8.2270508h2.0571289v11.8989258h-1.7509766l-6.5615234-8.465332
+		v8.465332h-2.0566406V12.2617817z"/>
+	<path d="M70.3798828,18.2114887c0-3.3828125,2.5327148-6.1533203,6.1362305-6.1533203
+		c2.1928711,0,3.5185547,0.7646484,4.6572266,1.8525391l-1.3427734,1.546875
+		c-0.9511719-0.8837891-1.9716797-1.4790039-3.331543-1.4790039c-2.2773438,0-3.9262695,1.8701172-3.9262695,4.2329102
+		c0,2.3286133,1.6489258,4.2324219,3.9262695,4.2324219c1.4619141,0,2.3969727-0.5947266,3.4165039-1.546875l1.3427734,1.3598633
+		c-1.2402344,1.2919922-2.6000977,2.1079102-4.8271484,2.1079102C72.9633789,24.364809,70.3798828,21.6621723,70.3798828,18.2114887
+		z"/>
+	<path d="M88.9780273,12.2617817h8.8212891v1.8701172h-6.7304688v3.0932617h5.9658203v1.8701172h-5.9658203v3.1958008h6.8154297
+		v1.8696289h-8.90625V12.2617817z"/>
+	<path d="M105.8930664,12.2617817h4.6914062c2.7705078,0,4.5214844,1.5810547,4.5214844,4.0117188
+		c0,2.6689453-2.1416016,4.0625-4.7597656,4.0625h-2.3623047v3.824707h-2.0908203V12.2617817z M110.4145508,18.4492817
+		c1.5800781,0,2.5664062-0.8837891,2.5664062-2.1586914c0-1.394043-1.0029297-2.125-2.5664062-2.125h-2.4306641v4.2836914
+		H110.4145508z"/>
+	<path d="M125.6967773,14.19977h-3.7734375v-1.9379883h9.6552734V14.19977h-3.7734375v9.9609375h-2.1083984V14.19977z"/>
+</g>
+</svg>
+</a></div>
+      <div class="navbar__phone"><a class="navbar__phone_link" href="" title="">+38 067 888 10 72</a>
+      </div>
+      <div class="navbar__bucket navbar__bucket-empty"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 522.1190186 522.1190186" style="enable-background:new 0 0 522.1190186 522.1190186;" xml:space="preserve">
+<path d="M87.1777115,274.044342h79.3366165h211.5623932h61.7061768c5.2892151,0,8.8148499-3.5263672,8.8148499-8.8148499
+	v-42.3129272c0-3.5263672-1.7628479-7.0520172-5.2891846-8.8148651l-162.1988831-63.4689941c-1.7628174,0-1.7628174,0-3.5263672,0
+	h-5.2892151l29.9716797-15.8675995c3.5263672-1.7628326,5.2892151-5.2891998,5.2892151-8.8148651V90.6886597
+	c0-1.762825,0-1.762825,0-1.762825c0-1.7628326-7.0520325-24.6824722-44.0757446-24.6824722
+	s-44.0757446,24.6824722-44.0757446,24.6824722v1.762825v24.6824722c0,5.2891998,3.5263824,8.8148651,8.8148651,8.8148651
+	c5.2891998,0,8.8148651-3.5263748,8.8148651-8.8148651V94.2150345c1.7628326-3.5263748,7.0520325-10.5784073,26.445282-10.5784073
+	c19.39328,0,24.6824951,8.8148651,26.4453125,10.5784073v28.2081299l-29.9716492,15.8676071
+	c-3.5263977,0-5.2892151,3.5263672-5.2892151,5.2891998v7.0520325v1.7628326l-171.01091,61.7061615
+	c-3.5263748,1.7628479-5.2891998,3.5263824-5.2891998,8.8155823v42.312912
+	C78.362854,270.5179749,81.8892212,274.044342,87.1777115,274.044342z M95.9932861,228.2050629l167.4880676-59.9433289h14.1040955
+	l153.3840027,59.9433289v28.208847H95.9932861V228.2050629z"/>
+<polygon points="424.4052734,380.2531433 111.6907043,429.8903809 111.6907043,255.450882 106.0178833,255.4509583
+	111.6907043,247.6508179 424.4052734,247.6508179 "/>
+</svg>
+
+        <div class="navbar__bucket_counter">3</div>
+        <div class="navbar__bucket_close" id="menu-bucket"><svg xmlns="http://www.w3.org/2000/svg" width="14.84" height="15.562" viewBox="0 0 14.84 15.562">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Прямоугольник_6_копия" data-name="Прямоугольник 6 копия" class="cls-1" d="M1083.64,35.222l14.14,14.142-0.71.707-14.14-14.142Zm13.43,0.707,0.71,0.707-14.14,14.142-0.71-.707Z" transform="translate(-1082.94 -35.219)"/>
+</svg>
+
+        </div>
+      </div>
+    </nav>
+    <div class="navbar__panel">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="offset-3 col-9 offset-sm-0 col-md-5 col-left">
+            <ul class="navbar__panel__menu">
+              <li><a class="nav-link" href="" title="">Свадебные платья</a></li>
+              <li><a class="nav-link" href="" title="">Вечерние платья</a></li>
+              <li><a class="nav-link" href="" title="">Аксессуары</a></li>
+              <li><a class="nav-link" href="" title="">Сервисы</a></li>
+              <li><a class="nav-link" href="" title="">Для мам</a></li>
+              <li><a class="nav-link" href="" title="">Для подружек</a></li>
+              <li><a class="nav-link" href="" title="">Ивенты</a></li>
+              <li><a class="nav-link" href="" title="">Блог</a></li>
+              <li><a class="nav-link" href="" title="">О нас</a></li>
+              <li><a class="nav-link" href="" title="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5 col-right">
+            <div class="navbar__panel__right">
+              <div class="navbar__panel__right__address">
+                <h2 class="h2-nav">Померяем лучшие платья вместе?</h2>
+                <p class="h7">Киев ул.Олеся Гончара, 26</p><a class="btn btn-border-wt" href="" title="">записаться на примерку</a>
+              </div>
+              <div class="navbar__panel__right__social">
+                <p class="h7">Мы в социальных сетях:</p>
+                <ul class="social-list">
+                  <li><a class="link-overline link-overline-icon" href="" title=""><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 324 512" style="enable-background:new 0 0 324 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M194,175.9999847v-64c0-17.6640015,14.3359985-32,32-32h32v-80h-64c-53.0240021,0-96,42.9760017-96,96v80H34v80h64v256h96
+			v-256h64l32-80H194z"/>
+	</g>
+</g>
+</svg>
+facebook</a>
+                  </li>
+                  <li><a class="link-overline link-overline-icon" href="" title=""><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 169.0630035 169.0630035" style="enable-background:new 0 0 169.0630035 169.0630035;" xml:space="preserve">
+<g>
+	<path d="M122.4059982-0.0000146H46.6539993C20.9290009-0.0000146,0,20.929985,0,46.6549835v75.7519989
+		c0,25.7259979,20.9290009,46.6549988,46.6539993,46.6549988h75.7519989c25.7269974,0,46.6559982-20.9300079,46.6559982-46.6549988
+		V46.6549835C169.0630035,20.929985,148.1329956-0.0000146,122.4059982-0.0000146z M154.0630035,122.4069824
+		c0,17.4550018-14.201004,31.6549988-31.6559982,31.6549988h-75.753006C29.2000008,154.0629883,15,139.8619843,15,122.4069824
+		V46.6549835c0-17.4539986,14.2000008-31.6549988,31.6539993-31.6549988h75.7519989
+		c17.4549942,0,31.6559982,14.2009993,31.6559982,31.6549988v75.7519989H154.0630035z"/>
+	<path d="M84.5309982,40.969986c-24.0209999,0-43.5629997,19.5419998-43.5629997,43.5630035
+		c0,24.0200043,19.5419998,43.5610046,43.5629997,43.5610046s43.5629959-19.5410004,43.5629959-43.5610046
+		C128.0939941,60.5119858,108.552002,40.969986,84.5309982,40.969986z M84.5309982,113.0929871
+		c-15.7490005,0-28.5629997-12.8119965-28.5629997-28.5610046c0-15.75,12.8129997-28.5629997,28.5629997-28.5629997
+		s28.5629959,12.8129997,28.5629959,28.5629997C113.0940018,100.280983,100.2799988,113.0929871,84.5309982,113.0929871z"/>
+	<path d="M129.9210052,28.2509842c-2.8899994,0-5.7290039,1.1700001-7.7699966,3.2199993
+		c-2.0510025,2.039999-3.2300034,4.8799992-3.2300034,7.7800007c0,2.8909988,1.1800003,5.7299995,3.2300034,7.7799988
+		c2.0400009,2.0400009,4.8799973,3.2200012,7.7699966,3.2200012c2.8999939,0,5.7299957-1.1800003,7.7799988-3.2200012
+		c2.0500031-2.0499992,3.2200012-4.8899994,3.2200012-7.7799988c0-2.9000015-1.1699982-5.7399979-3.2200012-7.7800007
+		C135.6609955,29.4209843,132.8209991,28.2509842,129.9210052,28.2509842z"/>
+</g>
+</svg>
+instagram</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar__bucket-panel">
+      <div class="navbar__bucket-panel_back"></div>
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-1 col-md-8 offset-lg-0 col-lg-6 offset-xl-1 col-xl-5">
+            <h1>Мой гардероб</h1>
+            <ul class="navbar__bucket-panel__list">
+              <li>Платья:</li>
+              <li>3 шт.</li>
+            </ul>
+            <div class="cart cart-bucket"><a class="cart__delete" href="" title=""><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 244.0869598 350.9115601" style="enable-background:new 0 0 244.0869598 350.9115601;" xml:space="preserve">
+<path d="M50.0216904,127.471405c48.6763153,0,97.1180191,0,145.7619324,0
+	c-3.8751068,59.1460876-7.7389374,118.1199646-11.6133728,177.2556763c-40.8596497,0-81.5525589,0-122.5311966,0
+	C57.7743378,245.7599487,53.9085617,186.7766418,50.0216904,127.471405z"/>
+<path d="M37.2659988,108.7037659c0-12.1447296,0-24.1218185,0-36.4496994c16.9543915,0,33.8017426,0,50.8875732,0
+	c0-7.8864517,0-15.4285088,0-23.1608505c23.1730652,0,46.1055069,0,69.2855759,0c0,7.527813,0,15.0649796,0,22.9491501
+	c17.0853271,0,33.9300995,0,50.9933472,0c0,12.3782043,0,24.4096985,0,36.6613998
+	C151.4967804,108.7037659,94.5105667,108.7037659,37.2659988,108.7037659z M139.0492554,67.5064774
+	c-10.8894196,0-21.5745316,0-32.2455215,0c0,1.6294098,0,3.0600052,0,4.5073242c10.8486786,0,21.468544,0,32.2455215,0
+	C139.0492554,70.4729691,139.0492554,69.0962067,139.0492554,67.5064774z"/>
+</svg>
+</a>
+              <div class="cart__back"><img src="img/illus/entry/entry1.png" title="" alt=""/>
+              </div>
+              <div class="cart__front">
+                <h2><a class="cart__front__link link-overline" href="" title="">WJ 17612</a></h2>
+                <div class="cart__front_designer">Designer:</div><a class="link-line link-italic" href="" title="">Victoria Jane Iris</a>
+                <div class="cart__front_double">
+                  <div class="cart__front_size">Размер:<span class="cart__front_size-s">S</span></div>
+                  <h4>86 000 грн</h4>
+                </div>
+              </div>
+            </div>
+            <div class="cart cart-bucket"><a class="cart__delete" href="" title=""><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 244.0869598 350.9115601" style="enable-background:new 0 0 244.0869598 350.9115601;" xml:space="preserve">
+<path d="M50.0216904,127.471405c48.6763153,0,97.1180191,0,145.7619324,0
+	c-3.8751068,59.1460876-7.7389374,118.1199646-11.6133728,177.2556763c-40.8596497,0-81.5525589,0-122.5311966,0
+	C57.7743378,245.7599487,53.9085617,186.7766418,50.0216904,127.471405z"/>
+<path d="M37.2659988,108.7037659c0-12.1447296,0-24.1218185,0-36.4496994c16.9543915,0,33.8017426,0,50.8875732,0
+	c0-7.8864517,0-15.4285088,0-23.1608505c23.1730652,0,46.1055069,0,69.2855759,0c0,7.527813,0,15.0649796,0,22.9491501
+	c17.0853271,0,33.9300995,0,50.9933472,0c0,12.3782043,0,24.4096985,0,36.6613998
+	C151.4967804,108.7037659,94.5105667,108.7037659,37.2659988,108.7037659z M139.0492554,67.5064774
+	c-10.8894196,0-21.5745316,0-32.2455215,0c0,1.6294098,0,3.0600052,0,4.5073242c10.8486786,0,21.468544,0,32.2455215,0
+	C139.0492554,70.4729691,139.0492554,69.0962067,139.0492554,67.5064774z"/>
+</svg>
+</a>
+              <div class="cart__back"><img src="img/illus/entry/entry1.png" title="" alt=""/>
+              </div>
+              <div class="cart__front">
+                <h2><a class="cart__front__link link-overline" href="" title="">WJ 17612</a></h2>
+                <div class="cart__front_designer">Designer:</div><a class="link-line link-italic" href="" title="">Victoria Jane Iris</a>
+                <div class="cart__front_double">
+                  <div class="cart__front_size">Размер:<span class="cart__front_size-s">S</span></div>
+                  <h4>86 000 грн</h4>
+                </div>
+              </div>
+            </div>
+            <div class="cart cart-bucket"><a class="cart__delete" href="" title=""><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 244.0869598 350.9115601" style="enable-background:new 0 0 244.0869598 350.9115601;" xml:space="preserve">
+<path d="M50.0216904,127.471405c48.6763153,0,97.1180191,0,145.7619324,0
+	c-3.8751068,59.1460876-7.7389374,118.1199646-11.6133728,177.2556763c-40.8596497,0-81.5525589,0-122.5311966,0
+	C57.7743378,245.7599487,53.9085617,186.7766418,50.0216904,127.471405z"/>
+<path d="M37.2659988,108.7037659c0-12.1447296,0-24.1218185,0-36.4496994c16.9543915,0,33.8017426,0,50.8875732,0
+	c0-7.8864517,0-15.4285088,0-23.1608505c23.1730652,0,46.1055069,0,69.2855759,0c0,7.527813,0,15.0649796,0,22.9491501
+	c17.0853271,0,33.9300995,0,50.9933472,0c0,12.3782043,0,24.4096985,0,36.6613998
+	C151.4967804,108.7037659,94.5105667,108.7037659,37.2659988,108.7037659z M139.0492554,67.5064774
+	c-10.8894196,0-21.5745316,0-32.2455215,0c0,1.6294098,0,3.0600052,0,4.5073242c10.8486786,0,21.468544,0,32.2455215,0
+	C139.0492554,70.4729691,139.0492554,69.0962067,139.0492554,67.5064774z"/>
+</svg>
+</a>
+              <div class="cart__back"><img src="img/illus/entry/entry1.png" title="" alt=""/>
+              </div>
+              <div class="cart__front">
+                <h2><a class="cart__front__link link-overline" href="" title="">WJ 17612</a></h2>
+                <div class="cart__front_designer">Designer:</div><a class="link-line link-italic" href="" title="">Victoria Jane Iris</a>
+                <div class="cart__front_double">
+                  <div class="cart__front_size">Размер:<span class="cart__front_size-s">S</span></div>
+                  <h4>86 000 грн</h4>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar__bucket-panel__list">
+              <li>Коллекции:</li>
+              <li>3 шт.</li>
+            </ul>
+            <div class="collection">
+              <h2 class="collection_heading link-overline">Total look spring/summer 2018</h2>
+              <div class="input-group_plus"></div>
+              <ul class="collection__panel">
+                <li><a class="collection__panel_link" href="" title="">Серьги PHILIPPE AUDIBERT 0858</a>
+                </li>
+                <li><a class="collection__panel_link" href="" title="">Обувь Badgley Mischka 3771</a>
+                </li>
+                <li><a class="collection__panel_link" href="" title="">Диадемы и тиары Elie Saab BR92485</a>
+                </li>
+              </ul><a class="cart__delete" href="" title=""><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 244.0869598 350.9115601" style="enable-background:new 0 0 244.0869598 350.9115601;" xml:space="preserve">
+<path d="M50.0216904,127.471405c48.6763153,0,97.1180191,0,145.7619324,0
+	c-3.8751068,59.1460876-7.7389374,118.1199646-11.6133728,177.2556763c-40.8596497,0-81.5525589,0-122.5311966,0
+	C57.7743378,245.7599487,53.9085617,186.7766418,50.0216904,127.471405z"/>
+<path d="M37.2659988,108.7037659c0-12.1447296,0-24.1218185,0-36.4496994c16.9543915,0,33.8017426,0,50.8875732,0
+	c0-7.8864517,0-15.4285088,0-23.1608505c23.1730652,0,46.1055069,0,69.2855759,0c0,7.527813,0,15.0649796,0,22.9491501
+	c17.0853271,0,33.9300995,0,50.9933472,0c0,12.3782043,0,24.4096985,0,36.6613998
+	C151.4967804,108.7037659,94.5105667,108.7037659,37.2659988,108.7037659z M139.0492554,67.5064774
+	c-10.8894196,0-21.5745316,0-32.2455215,0c0,1.6294098,0,3.0600052,0,4.5073242c10.8486786,0,21.468544,0,32.2455215,0
+	C139.0492554,70.4729691,139.0492554,69.0962067,139.0492554,67.5064774z"/>
+</svg>
+</a>
+            </div>
+            <div class="collection">
+              <h2 class="collection_heading link-overline">Total look spring/summer 2018</h2>
+              <div class="input-group_plus"></div>
+              <ul class="collection__panel">
+                <li><a class="collection__panel_link" href="" title="">Серьги PHILIPPE AUDIBERT 0858</a>
+                </li>
+                <li><a class="collection__panel_link" href="" title="">Обувь Badgley Mischka 3771</a>
+                </li>
+                <li><a class="collection__panel_link" href="" title="">Диадемы и тиары Elie Saab BR92485</a>
+                </li>
+              </ul><a class="cart__delete" href="" title=""><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 244.0869598 350.9115601" style="enable-background:new 0 0 244.0869598 350.9115601;" xml:space="preserve">
+<path d="M50.0216904,127.471405c48.6763153,0,97.1180191,0,145.7619324,0
+	c-3.8751068,59.1460876-7.7389374,118.1199646-11.6133728,177.2556763c-40.8596497,0-81.5525589,0-122.5311966,0
+	C57.7743378,245.7599487,53.9085617,186.7766418,50.0216904,127.471405z"/>
+<path d="M37.2659988,108.7037659c0-12.1447296,0-24.1218185,0-36.4496994c16.9543915,0,33.8017426,0,50.8875732,0
+	c0-7.8864517,0-15.4285088,0-23.1608505c23.1730652,0,46.1055069,0,69.2855759,0c0,7.527813,0,15.0649796,0,22.9491501
+	c17.0853271,0,33.9300995,0,50.9933472,0c0,12.3782043,0,24.4096985,0,36.6613998
+	C151.4967804,108.7037659,94.5105667,108.7037659,37.2659988,108.7037659z M139.0492554,67.5064774
+	c-10.8894196,0-21.5745316,0-32.2455215,0c0,1.6294098,0,3.0600052,0,4.5073242c10.8486786,0,21.468544,0,32.2455215,0
+	C139.0492554,70.4729691,139.0492554,69.0962067,139.0492554,67.5064774z"/>
+</svg>
+</a>
+            </div>
+          </div>
+          <div class="offset-md-1 col-md-7 offset-lg-0 col-lg-5 offset-xl-1 col-xl-4">
+            <form class="form-bucket">
+              <p>Запишитесь на примерку и они будут ждать вас в нашем бутике</p>
+              <div class="input-group">
+                <input type="text" placeholder="Ваше имя, фамилия"/>
+                <div class="input-group_line"></div>
+                <div class="input-group_error">Введите ваш номер телефона</div>
+              </div>
+              <div class="input-group">
+                <input class="error" type="text" placeholder="Номер телефона"/>
+                <div class="input-group_line"></div>
+                <div class="input-group_error">Введите ваш номер телефона</div>
+              </div>
+              <div class="input-group">
+                <input type="text" placeholder="Ваш e-mail"/>
+                <div class="input-group_line"></div>
+                <div class="input-group_error">Введите ваш номер телефона</div>
+              </div>
+              <div class="form-bucket__time">
+                <div class="input-group input-group-picker">
+                  <input class="datepicker" type="text" placeholder="Дата примерки"/>
+                  <div class="input-group_line"></div>
+                  <div class="input-group_error">Выберите дату</div>
+                  <div class="input-group_plus"></div>
+                </div>
+                <div class="input-group input-group-picker">
+                  <select class="chosen-select" data-placeholder="ВРЕМЯ">
+                    <option></option>
+                    <option>09:00 - 10:00</option>
+                    <option>10:00 - 11:00</option>
+                    <option>11:00 - 12:00</option>
+                    <option>12:00 - 13:00</option>
+                    <option>13:00 - 14:00</option>
+                    <option>14:00 - 15:00</option>
+                    <option>15:00 - 16:00</option>
+                    <option>16:00 - 17:00</option>
+                    <option>17:00 - 18:00</option>
+                  </select>
+                  <div class="input-group_line"></div>
+                  <div class="input-group_error">Выберите дату</div>
+                  <div class="input-group_plus"></div>
+                </div>
+              </div>
+              <button class="btn">записаться на примерку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <header class="header-catalog body-back" data-bg="#a19d9c">
+        <div class="container">
+          <div class="row">
+            <div class="offset-md-1 col-md-10 col-xl-6">
+              <form class="form-catalog">
+                <div class="input-group input-group-picker input-group-catalog">
+                  <select class="select2-select-designer">
+                    <option></option>
+                    <option>White by Vera Wang</option>
+                    <option>Isabelle Armstrong</option>
+                    <option>Ersa Atelier</option>
+                    <option>Cymbeline</option>
+                    <option>Ersa Atelier</option>
+                    <option>Cymbeline</option>
+                    <option>Daalarna</option>
+                    <option>Gevrin</option>
+                    <option>Sophia Tolli</option>
+                    <option>Cymbeline</option>
+                    <option>Charlie Brear</option>
+                    <option>Anna Campbell</option>
+                    <option>Inbal Dror</option>
+                    <option>Lazaro</option>
+                  </select>
+                  <div class="input-group_line"></div>
+                  <div class="input-group_error">Выберите дату</div>
+                  <div class="input-group_plus"></div>
+                </div>
+                <div class="input-group input-group-picker input-group-catalog">
+                  <select class="select2-select-siluet">
+                    <option></option>
+                    <option>White by Vera Wang</option>
+                    <option>Isabelle Armstrong</option>
+                    <option>Ersa Atelier</option>
+                    <option>Cymbeline</option>
+                    <option>Ersa Atelier</option>
+                    <option>Cymbeline</option>
+                    <option>Daalarna</option>
+                    <option>Gevrin</option>
+                    <option>Sophia Tolli</option>
+                    <option>Cymbeline</option>
+                    <option>Charlie Brear</option>
+                    <option>Anna Campbell</option>
+                    <option>Inbal Dror</option>
+                    <option>Lazaro</option>
+                  </select>
+                  <div class="input-group_line"></div>
+                  <div class="input-group_error">Выберите дату</div>
+                  <div class="input-group_plus"></div>
+                </div>
+              </form>
+            </div>
+            <div class="offset-md-1 col-md-11 offset-xl-2 col-xl-7">
+              <h1>Нет такого платья</h1>
+              <p>Попробуйте выбрать другой тип или дизайнера платьев</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="body-back" data-bg="#a19d9c">
+        <div class="container">
+          <div class="row">
+            <div class="offset-md-1 col-md-10 col-xl-8">
+              <div class="box box-transparent">
+                <h2 class="text-gradient">Еще в этом сезоне</h2>
+                <p>Эта коллекция свадебных платьев которая затмит все вокруг. Удивительные свадебные платья служат достойной оправой для классической красоты, аристократичных манер, горделивой осанки и сиятельной улыбки.</p>
+              </div>
+            </div>
+            <div class="offset-md-3 col-md-7 offset-xl-2 col-padding"><a class="btn" href="" title="">Посмотреть коллекцию</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-simple">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-padding">
+              <div class="footer-data__copyright">
+                <div class="footer-data__copyright_text">2018 ©  Права защещены</div><a class="footer-data__copyright_link" href="" title="">Created by VOLTA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script type="text/javascript" src="js/vendor.js"></script>
+    <!--script(type="text/javascript" src="js/noui.js")-->
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>

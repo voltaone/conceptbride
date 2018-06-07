@@ -1,0 +1,98 @@
+.slider-look
+  //+mob()
+  //  padding 0 r(15)
+  .slide
+    overflow hidden
+    +mob()
+      margin 0 r(10)
+      max-width r(270)
+    .btn
+      position absolute
+      right r(15)
+      top r(395)
+      z-index 600
+      +mob()
+        position static
+        mt(50)
+  &__image
+    &-right, &-left
+      img
+        width 100%
+    &-right
+      width 100%
+      +mob()
+        position absolute
+        bottom 100%
+        right 0
+        width 50%
+    &-left
+      position relative
+      width r(753)
+      z-index 200
+      +pad()
+        width r(515)
+      +mob()
+        width 100%
+
+
+  .slider-arrow
+    position absolute
+    top r(395)
+    z-index 100
+    &.right
+      right r(319)
+    &.left
+      right r(416)
+
+.look-heading
+  co($brown)
+  position relative
+  pl(102)
+  pt(25)
+  mb(30)
+  pb(27)
+  mr(45)
+  +pad()
+    fs(14)
+    mr(0)
+  +mob()
+    mr(0)
+    pl(0)
+  &:after
+    ba()
+    top 50%
+    right 0
+    bg($brown)
+    height r(1)
+    width r(153)
+    +pad()
+      width r(30)
+    +xs()
+      top 65%
+
+
+.collection-regular-row
+  mb(180)
+  +mob()
+    margin 0 0 r(180)
+  .btn
+    position absolute
+    right r(15)
+    top r(395)
+    z-index 600
+    +mob()
+      position static
+      mt(50)
+  &.collection-flip
+    +mmin(768px)
+      .look-heading
+        text-align right
+        pl(0)
+        pr(102)
+        mr(0)
+        ml(45)
+        &:after
+          right auto
+          left 0
+      .slider-look__image-left
+        left -(r(85))

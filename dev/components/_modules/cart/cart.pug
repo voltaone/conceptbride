@@ -1,0 +1,102 @@
+mixin cart-article-right()
+
+    .cart.cart-article
+        .cart__back
+        .cart__front
+            h2 Транк-шоу свадебных платьев  от всемирно известного...
+
+            +link-overline-svg-right()
+
+mixin cart-article-left()
+    .cart.cart-article
+        .cart__back
+        .cart__front
+            h2 Транк-шоу свадебных платьев  от всемирно известного...
+
+            +link-overline-svg-left()
+
+
+mixin cart-designer-small-right()
+    .cart.cart-product-small
+        .cart__back
+            +img('img/illus/entry/entry1.png')
+        .cart__front
+            h2 Victoria Jane Iris
+
+            +link-overline-svg-right()
+
+mixin cart-designer-small-left()
+    .cart.cart-product-small
+        .cart__back
+            +img('img/illus/entry/entry1.png')
+        .cart__front
+            h2 Galia Lahav
+
+            +link-overline-svg-left()
+
+
+
+mixin cart-product-small-right()
+    .cart.cart-product-small
+        .cart__back
+            +img('img/illus/entry/entry1.png')
+        .cart__front
+            .cart__front_designer Designer:
+            +link-line-italic('Victoria Jane Iris')
+            h2 WJ 17612
+
+            +link-overline-svg-right()
+
+mixin cart-product-small-left()
+    .cart.cart-product-small
+        .cart__back
+            +img('img/illus/entry/entry1.png')
+        .cart__front
+            .cart__front_designer Designer:
+            +link-line-italic('Victoria Jane Iris')
+            h2 WJ 17612
+
+            +link-overline-svg-left()
+
+mixin cart-product-right()
+    .animation-view
+        .cart.cart-product.cart-product-right.wow.rellax(data-rellax-speed='.7')
+            .cart__back
+                +img('img/illus/entry/entry1.png')
+            .cart__front
+                .cart__front_designer Designer:
+                +link-line-italic('Victoria Jane Iris')
+                h2 WJ 17612
+                h4 86 000 грн
+                +link-overline('Посмотреть')
+        .animation-view__wrapper.wow
+
+mixin cart-product-left()
+    .animation-view
+        .cart.cart-product.cart-product-left.wow.rellax(data-rellax-speed='.1')
+            .cart__back
+                +img('img/illus/entry/entry1.png')
+            .cart__front
+                .cart__front_designer Designer:
+                +link-line-italic('Victoria Jane Iris')
+                h2 WJ 17612
+                h4 86 000 грн
+                +link-overline('Посмотреть')
+        .animation-view__wrapper.wow
+
+mixin cart-bucket()
+    .cart.cart-bucket
+        a(href='' title='').cart__delete
+            include ../../_svgs/delete-01.svg
+        .cart__back
+            +img('img/illus/entry/entry1.png')
+        .cart__front
+            h2
+                a(href='' title='').cart__front__link.link-overline
+                    | WJ 17612
+            .cart__front_designer Designer:
+            +link-line-italic('Victoria Jane Iris')
+            .cart__front_double
+                .cart__front_size Размер:
+                    span.cart__front_size-s S
+                h4 86 000 грн

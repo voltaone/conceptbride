@@ -1,0 +1,37 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Concept Bride - Каталог
+
+block content
+
+    +header-collection()
+
+
+    section(data-bg='#d9d8d7').body-back
+        .container
+            +slider-look-slide-regular()
+            +slider-look-slide-flip-regular()
+            +slider-look-slide-regular()
+            .row
+                .offset-xl-2.col-xl-9.col-padding
+                    +btn-dark('Показать еще')
+                    .spacer-200.hidden-pad.hidden-mob
+
+    section(data-bg='#d9d8d7').body-back
+        .container
+            .row
+                +near()
+
+
+    +footer-simple-brown()
+
+
+
+
+
+
+
+
+

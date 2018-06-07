@@ -1,0 +1,58 @@
+
+
+
+img {}
+
+.img-responsive
+  width 100%
+
+.img-pair
+  position relative
+  display flex
+  justify-content space-between
+  align-items flex-start
+  pl(50)
+  pr(50)
+  pt(60)
+  mb(84)
+  mt(20)
+  +xs()
+    pl(0)
+    pr(0)
+  img
+    max-width calc(50% - 0.625rem)
+    width 100%
+    display block
+    height auto
+    flex 0 0 calc(50% - 0.625rem)
+    position relative
+    &:first-child
+      margin-top r(60)
+      z-index 10
+      +xs()
+        mt(0)
+    &:nth-child(2)
+      margin-left -6.250rem
+      z-index 5
+      +xs()
+        mt(250)
+    +xs()
+      max-width r(194)
+  &_description
+    position absolute
+    left 0
+    bottom r(50)
+
+  &.reverse
+    img
+      &:first-child
+        mt(0)
+        +xs()
+          mt(250)
+      &:nth-child(2)
+        margin-top r(60)
+        +xs()
+          mt(0)
+    .img-pair_description
+      bottom auto
+      top r(110)

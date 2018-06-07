@@ -1,0 +1,80 @@
+.collection
+  border-bottom r(1) solid rgba(240, 240, 240, .1)
+  position relative
+  pt(47)
+  &_heading
+    cursor pointer
+    fs(18)
+    letter-spacing: r(0.9)
+    text-transform none
+    line-height 1.22
+    +tab()
+      fs(14)
+    +mob()
+      fs(16)
+    &.active
+      & + .input-group_plus
+        &:after
+          transform rotate(180deg)
+  .input-group_plus
+    right: r(52)
+    top: r(58)
+    +mob()
+      right 0
+  &__panel
+    display none
+    pt(10)
+    pl(49)
+    pb(50)
+    +tab()
+      pl(25)
+    li
+      mb(25)
+      &:last-child
+        mb(0)
+    &_link
+      font-size: e(15.5)
+      line-height: 1.42;
+      letter-spacing: r(0.8)
+      color: $wt56
+      &:hover
+        co($wt)
+
+  //.input-group_plus
+  //  right r(53)
+  //  top r(57)
+
+//.accordion
+//  &_heading
+//    bg($wt)
+//    co($bk)
+//    cursor pointer
+//    padding r(12) r(15) r(13)
+//    fs(16)
+//    margin 0
+//    position relative
+//    trans()
+//    &:focus
+//      outline none
+//    &:hover
+//      bg(lightblue)
+//      co($wt)
+//    &:after
+//      triangle($bk, down, 4px)
+//      top calc(50% - 2px)
+//      right r(15)
+//      trans()
+//    &.active
+//      bg(blue)
+//      co($wt)
+//      &:after
+//        transform rotate(180deg)
+//
+//  &__panel
+//    display none
+//    padding r(12) r(15) r(13)
+
+
+
+
+

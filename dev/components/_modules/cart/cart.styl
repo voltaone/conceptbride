@@ -1,0 +1,230 @@
+.cart
+  display flex
+  align-items flex-end
+  height r(270)
+  overflow hidden
+  z-index 20
+  position relative
+  +mob()
+    flex-wrap wrap
+
+  &__back
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    z-index 10
+    display flex
+    align-items center
+    justify-content flex-end
+    overflow hidden
+    background-image: linear-gradient(to left, rgba(49 48 54, 0.23), #a19d9c)
+    +mob()
+      position static
+    img
+      height auto
+      +mob()
+        width 100%
+  &__front
+    position relative
+    z-index 15
+    pl(100)
+    pb(78)
+    h2
+      line-height 1.22
+      max-width r(300)
+      mb(45)
+    h4
+      mb(81)
+      color $wt56
+    &_designer
+      font-family: $s-font, serif
+      font-size: e(12)
+      font-style: italic;
+      line-height: e(22)
+      letter-spacing: r(0.4)
+      color: $wt50
+      display inline-block
+      mr(5)
+      mb(29)
+    &_size
+      co($wt50)
+      letter-spacing: r(0.9)
+      &-s
+        co($wt)
+        fs(18)
+        fw(700)
+        ml(14)
+    &_double
+      display flex
+      justify-content space-between
+      align-items flex-end
+    &__link
+      fs(16)
+
+  &.cart-product-small
+    bg(#878485)
+    .cart__back
+      background #878485
+      &:after
+        ba()
+        left 0
+        right 0
+        top 0
+        bottom 0
+        opacity .4
+        background #878485
+      +mob()
+        position absolute
+
+  &.cart-product
+    bg($gray)
+
+    +mob()
+      bg($tr)
+    .cart__back
+      pr(12.5%)
+      +mob()
+        height r(277)
+        pr(0)
+        width 100%
+        justify-content center
+      img
+        height 100%
+        +mob()
+          width auto
+    .cart__front
+      pb(160)
+      pr(171)
+      +mob()
+        padding r(20) r(15)
+        width 100%
+        display flex
+        flex-wrap wrap
+        .link-overline
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          color: transparent;
+      h2
+        mb(22)
+        +mob()
+          width 60%
+          mb(5)
+      h4
+        +mob()
+          width 40%
+          text-align right
+          mb(5)
+    .cart__front_designer
+      mb(77)
+      +mob()
+        mb(19)
+
+    &.cart-product-left
+      justify-content: flex-end;
+      width: 64.454vw;
+      height: 47.5vw
+      +pad()
+        width: r(525)
+        height: r(475)
+      +mob()
+        width r(296)
+
+        height auto
+
+      .cart__back
+        justify-content flex-start
+        +mob()
+          justify-content center
+
+    &.cart-product-right
+      width: 41.016vw;
+      height: 37.11vw;
+      +pad()
+        width: r(525)
+        height: r(475)
+      +mob()
+        width r(296)
+
+        height auto
+
+      .cart__front
+        pb(120)
+        +mob()
+          padding r(20) r(15)
+
+  &.cart-article
+    .cart__back
+      background #878485
+      +mob()
+        position absolute
+
+    .cart__front
+      +tab()
+        pl(50)
+      +land()
+        pl(50)
+
+.cart-bucket
+  height auto
+  padding r(35) 0
+  mb(15)
+  border-bottom r(1) solid rgba(240, 240, 240, .1)
+  position relative
+  +mob()
+    flex-wrap nowrap
+  .cart__back
+    position static
+    flex 0 0 r(140)
+    max-width r(140)
+    background none
+    justify-content flex-start
+    +tab()
+      flex 0 0 r(80)
+      max-width r(80)
+    +mob()
+      flex 0 0 r(80)
+      max-width r(80)
+    img
+      max-height r(116)
+      +mob()
+        width auto
+
+  .cart__front
+    padding 0 r(80) 0 0
+    width 100%
+    +tab()
+      pr(40)
+    +mob()
+      pr(0)
+    h2
+      mb(9)
+    h4
+      mb(0)
+      line-height normal
+    .cart__front_designer
+      mb(32)
+
+.cart__delete
+  position absolute
+  right r(18)
+  top r(23)
+  display block
+  svg
+    width: r(10)
+    height: auto
+    path
+      fill $wt50
+      trans()
+  &:hover
+    svg
+      path
+        fill $wt
+
+
+
+

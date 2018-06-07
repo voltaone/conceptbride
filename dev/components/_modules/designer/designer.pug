@@ -1,0 +1,29 @@
+mixin designer-list()
+    ul.designer-list
+        li
+           +designer-list-link('White by Vera Wang', 'Имя американского дизайнера китайского происхождения Веры Вонг сегодня является синонимом самого свадебного...')
+        li
+           +designer-list-link('Isabelle Armstrong', 'Имя американского дизайнера китайского происхождения Веры Вонг сегодня является синонимом самого свадебного...')
+        li
+           +designer-list-link('Galia Lahav', 'Имя американского дизайнера китайского происхождения Веры Вонг сегодня является синонимом самого свадебного...')
+        li
+           +designer-list-link('Ersa', 'Имя американского дизайнера китайского происхождения Веры Вонг сегодня является синонимом самого свадебного...')
+        li
+           +designer-list-link('Cymbeline', 'Имя американского дизайнера китайского происхождения Веры Вонг сегодня является синонимом самого свадебного...')
+
+    ul.designer-list-photo
+        li
+            +img('img/illus/designer/designer1.png')
+        li
+            +img('img/illus/designer/designer1.png')
+        li
+            +img('img/illus/designer/designer1.png')
+        li
+            +img('img/illus/designer/designer1.png')
+        li
+            +img('img/illus/designer/designer1.png')
+
+mixin designer-list-link(heading, text)
+    a(href='' title='').designer-list_link
+        h2.color-brown= heading
+        p.color-brown= text

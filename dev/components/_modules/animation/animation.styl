@@ -1,0 +1,80 @@
+@keyframes view
+  0%
+    height 0
+    left 0
+  75%
+    height 100%
+    left 0
+  100%
+    opacity 1
+
+@keyframes opac
+  0%
+    opacity 0
+  100%
+    opacity 1
+
+@keyframes upup
+  0%
+    transform translateY(r(50))
+    opacity 0
+  100%
+    transform 0
+    opacity 1
+
+
+
+.animation-view
+  position relative
+  &__wrapper
+    position absolute
+    bottom 0
+    left calc(100% - 0.125rem)
+    bg(#f1f1f9)
+    width r(2)
+    height 100%
+    trans()
+    opacity 0
+    animation view .5s linear none
+
+  .box, .cart, .slider-instagram, img, .link-video-cart
+    animation opac .5s linear .5s both
+    opacity 0
+
+  p, h1, h2, a, h3, h4, .cart__front_designer
+    animation-delay .5s
+
+
+
+
+p, h1, h2, a, h3, h4, .cart__front_designer
+  animation upup .5s both
+  position relative
+  trans()
+
+//h2.text-gradient span, h1.text-gradient span
+//  background-image: linear-gradient(to right, #bfa39f, #dcc3bf), linear-gradient(#ffffff, #ffffff);
+//  background-clip: text;
+//  -webkit-background-clip: text;
+//  -webkit-text-fill-color: transparent;
+//
+//
+
+
+//@keyframes fadeInUp
+//  from
+//    //opacity: 0;
+//    transform: translate3d(0, 100%, 0);
+//
+//  to
+//    //opacity: 1;
+//    transform: translate3d(0, 200%, 0);
+//
+//@keyframes fadeInUpBig
+//  from
+//    opacity: 0;
+//    transform: translate3d(0, 2000px, 0)
+//
+//  to
+//    opacity: 1;
+//    transform: translate3d(0, 10000000px, 0)

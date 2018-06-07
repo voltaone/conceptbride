@@ -1,0 +1,83 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Concept Bride - Главная страница
+
+block content
+
+    +header-index()
+
+
+
+
+    section(data-bg='#a19d9c').body-back
+        .container
+            .row
+                .offset-md-1.col-md-11.offset-xl-5.col-xl-7.rellax(data-rellax-speed='-.7')
+                        +box-btn('Мы предлагаем', 'Только наслаждение, никаких забот. Позволь другим беспокоиться о твоем внешнем виде в этот важный день, ведь ты невеста', 'записаться на примерку')
+
+        .container.container-slider-cart
+            .row
+                .offset-md-1.col-md-11.offset-lg-0.col-lg-12
+                        +cart-slider()
+
+
+    section(data-bg='#d9d8d7').body-back
+        .container
+            .row
+                .col-md-11.col-xl-7.rellax(data-rellax-speed='.3')
+                    +box('Найдти своего дизайнера', 'У нас представлены только лучшие образцитоповых дизайнеров свадебных платьев')
+
+                .offset-md-1.col-md-10.offset-xl-5.col-xl-7
+                    .designer
+                        +designer-list()
+
+                    .btn-pair
+                        +btn('Показать всех')
+
+    section(data-bg='#ffffff').body-back
+        .container
+            .row
+                .offset-md-1.col-md-11.offset-xl-5.col-xl-7.rellax(data-rellax-speed='-.85')
+
+                    +box-pink('Наши невесты', 'При покупке платья сделай репост с тегом # concept pride и получи фотографа на свадьбу бесплатно')
+                .col-12
+                        +slider-instagram()
+
+    section(data-bg='#d9d8d7').body-back
+        .container
+            .row
+                .col-12.col-xl-7
+                    +box-transparent('Аксессуары', 'Мы собрали коллекции из идеально подходящих элементов \n' +
+                    'к свадебному платью')
+
+
+                .col-12
+                        +slider-look()
+
+
+    section(data-bg='#ffffff').body-back
+        .container
+            .row
+                .col-md-11.col-xl-7.rellax(data-rellax-speed='-.7')
+                    +box-link('Если вкратце', 'Мы именно те люди которые сделают твой самый \n' +
+                    'главный день в жизни сказочным сюжетом. В твоем \n' +
+                    'распоряжении целая команда профессиональных \n' +
+                    'консультантов, которые понимают, насколько  \n' +
+                    'важен для невесты этот... ', 'Узнать больше')
+
+                .col-12
+                        +slider-summary()
+
+
+
+
+    +message()
+
+    +footer-index()
+
+
+
+
+

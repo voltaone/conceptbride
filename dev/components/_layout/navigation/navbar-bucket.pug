@@ -1,0 +1,29 @@
+mixin navbar-bucket()
+    .navbar__bucket-panel
+        .navbar__bucket-panel_back
+        .container
+            .row
+                .offset-md-1.col-md-8.offset-lg-0.col-lg-6.offset-xl-1.col-xl-5
+                    h1 Мой гардероб
+                    ul.navbar__bucket-panel__list
+                        li Платья:
+                        li 3 шт.
+                    +cart-bucket()
+                    +cart-bucket()
+                    +cart-bucket()
+                    ul.navbar__bucket-panel__list
+                        li Коллекции:
+                        li 3 шт.
+                    +accordion()
+                    +accordion()
+                .offset-md-1.col-md-7.offset-lg-0.col-lg-5.offset-xl-1.col-xl-4
+                    form.form-bucket
+                        p Запишитесь на примерку и они будут ждать вас в нашем бутике
+                        +input-group('Ваше имя, фамилия')
+                        +input-group-error('Номер телефона')
+                        +input-group('Ваш e-mail')
+
+                        .form-bucket__time
+                            +datepicker('Дата примерки')
+                            +timepicker('Время')
+                        +btn-submit('записаться на примерку')

@@ -1,0 +1,107 @@
+header
+  height r(720)
+  position relative
+
+.container-header
+  height 100%
+  display flex
+  align-items center
+  position relative
+  z-index 100
+  +mob()
+    pr(15)
+    pl(15)
+
+  .row
+    padding-top: r(62)
+    +mob()
+      pt(62)
+
+.header-index
+  mb(168)
+  &__back
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    z-index 50
+    overflow hidden
+    display flex
+    align-items center
+    justify-content center
+
+    img
+      width 100%
+      position relative
+      z-index 10
+      +pad()
+        height 100%
+        width auto
+      +mob()
+        height 100%
+        width auto
+
+  .blog__date
+    mb(30)
+    &:after
+      display none
+
+.header-like
+  pt(113)
+  pb(193)
+  +xs()
+    pt(110)
+    pb(100)
+
+.header-catalog
+  pt(120)
+  height auto
+  mb(185)
+  +mob()
+    pt(160)
+    pl(15)
+    pr(15)
+  &__designer
+    position absolute
+    left 0
+    top 0
+    z-index -1
+    max-width 100%
+
+.header-blog
+  pt(120)
+  height auto
+  mb(105)
+  +tab()
+    mb(0)
+  +mob()
+    mb(0)
+    pt(160)
+    pl(15)
+    pr(15)
+
+.header-collection
+  pt(268)
+  height auto
+  mb(135)
+  +tab()
+    mb(0)
+  +mob()
+    mb(0)
+    pt(160)
+    pl(15)
+    pr(15)
+
+
+.header-cartin
+  height auto
+  pt(189)
+
+.header-blogin
+  +xs()
+    pt(114)
+    height r(575)
+  .container-header
+    +xs()
+      align-items flex-end

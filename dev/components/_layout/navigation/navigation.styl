@@ -1,0 +1,211 @@
+nav
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 9999
+
+.navbar
+  df(row)
+  justify-content space-between
+  bg($tr)
+  trans()
+  margin-left 4.296875vw
+  +pad()
+    margin-left 0
+  +mob()
+    margin-left 0
+    flex-wrap wrap
+
+  &__menu
+    padding r(38) r(36)
+    max-width r(100.75)
+    bg($dark)
+
+    +mob()
+      padding r(29) r(15) r(30)
+      max-width r(68)
+
+      justify-content center
+      width 100%
+    &__link
+      text-transform uppercase
+      font-size: e(8)
+      font-weight: 600;
+      letter-spacing: r(1.2)
+      color: $wt60
+      display block
+      bg($dark)
+
+      &_menu
+        display block
+      &_close
+        display none
+      &:hover
+        co($wt)
+  &__lang
+    pl(99)
+    pr(40)
+    bg($dark)
+
+    +pad()
+      pl(0)
+      pr(0)
+    +mob()
+      width 100%
+
+      padding r(30) 0 r(30) r(30)
+
+    &__list
+      display flex
+      position relative
+      align-items center
+      height 100%
+      &:after
+        ba()
+        width r(1)
+        height r(1)
+        bg($wt)
+        top 50%
+        left 0
+
+      li
+        display flex
+        margin 0 r(25)
+        trans()
+        +pad()
+          margin 0 r(20)
+        &:first-child
+          ml(20)
+        &:nth-child(2)
+          transform translate3d(-63px, 0,0)
+          opacity 0
+        &:nth-child(3)
+          transform translate3d(-126px, 0,0)
+          opacity 0
+        &:last-child
+          mr(0)
+      &:hover
+        li
+          transform none
+          opacity 1
+      &_link
+        font-size: e(8)
+        font-weight: 600;
+        letter-spacing: r(1.2)
+        color: $wt60
+        text-transform uppercase
+        &:hover
+          co($wt)
+  &__logo
+    display flex
+    align-items center
+    padding r(6) r(91) 0 r(77)
+    bg($dark)
+    +pad()
+      padding-left r(15)
+      padding-right r(42)
+    +mob()
+      padding-left r(53)
+      padding-right r(49)
+      max-width calc(100% - 8.5rem)
+      width 100%
+    &_link
+      display block
+      svg
+        width: r(102)
+        height: auto
+        +mob()
+          width r(69)
+        g, path, polygon
+          fill $wt60
+          trans()
+      &:hover
+        svg
+          g, path, polygon
+            fill $wt
+          #concept
+            transform translate3d(10px,0,0)
+          #bride
+            transform translate3d(-10px,0,0)
+  &__phone
+    display flex
+    align-items center
+    justify-content flex-end
+    padding 0 r(129)
+    width 100%
+    +pad()
+      padding-left r(60)
+      padding-right r(60)
+    +mob()
+      order 2
+      bg($wt)
+      padding r(17) 0
+      justify-content center
+    &_link
+      bg($tr)
+      font-size: e(10)
+      font-weight: 600;
+      letter-spacing: r(1.5)
+      color: $wt
+      +mob()
+        co($brown)
+      &:hover
+        +mmin(768px)
+          co($wt60)
+  &__bucket
+    bg($gray-dark)
+    padding r(7) r(51) 0 r(44)
+    display flex
+    align-items center
+    position relative
+    trans()
+    +mob()
+      max-width r(68)
+      pl(0)
+      pr(0)
+      justify-content center
+      width 100%
+    &_counter
+      position absolute
+      font-size: e(15.5)
+      line-height: 1.42;
+      letter-spacing: r(0.8)
+      color: $wt
+      bottom r(27)
+      right r(42)
+    svg
+      width r(30)
+      height auto
+      path, polygon
+        fill $wt60
+    &_close
+      position absolute
+      left 0
+      right 0
+      top 0
+      bottom 0
+      bg(#7b7b80)
+      display flex
+      align-items center
+      justify-content center
+      opacity 0
+      trans()
+      cursor pointer
+      svg
+        width r(16)
+        height r(16)
+      &:hover
+        +mmin(768px)
+          bg($dark)
+
+    &:hover
+      +mmin(768px)
+        bg($dark)
+
+    &.navbar__bucket-empty
+      svg polygon, .navbar__bucket_counter
+        display none
+
+.navbar__menu, .navbar__lang, .navbar__logo, .navbar__phone
+  trans()

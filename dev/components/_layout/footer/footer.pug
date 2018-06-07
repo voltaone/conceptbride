@@ -1,0 +1,45 @@
+
+
+mixin footer-index()
+    footer(data-bg='#ffffff').body-back
+        .container
+            .row
+                .col-md-4.col-xl-5
+                    +map()
+                .col-md-8.col-xl-7
+                    .footer-data
+                        ul.footer-data__phones
+                            li
+                                +link-overline('+38 067 888 10 72')
+                            li
+                                +link-overline('+38 067 888 10 72')
+                        .footer-data__address Украина, Киев ул.Олеся Гончара, 26
+                        .footer-data__overtime Время Работы:
+                        ul.footer-data__time
+                            li
+                                | вт-пт: 11.00-20.00
+                            li
+                                | сб: 10.00-19.00
+                        .footer-data__copyright
+                            .footer-data__copyright_text 2018 ©  Права защещены
+                            +a('Created by VOLTA', 'footer-data__copyright_link')
+
+
+mixin footer-simple()
+    footer.footer-simple
+        .container
+            .row.justify-content-center
+                .col-md-10.col-padding
+                    .footer-data__copyright
+                        .footer-data__copyright_text 2018 ©  Права защещены
+                        +a('Created by VOLTA', 'footer-data__copyright_link')
+
+
+mixin footer-simple-brown()
+    footer.footer-simple
+        .container
+            .row.justify-content-center
+                .col-md-10.col-padding
+                    .footer-data__copyright
+                        .footer-data__copyright_text.color-brown 2018 ©  Права защещены
+                        +a('Created by VOLTA', 'footer-data__copyright_link color-brown')

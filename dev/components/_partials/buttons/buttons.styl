@@ -1,0 +1,142 @@
+button
+  border none
+  cursor pointer
+  trans()
+  &:focus
+    outline none
+
+.btn-pair
+  display flex
+  justify-content space-between
+  mt(66)
+  align-items center
+  +mob()
+    flex-wrap wrap
+    .btn
+      mb(40)
+
+
+.btn-pair-center
+  justify-content center
+
+.btn
+  max-width r(300)
+  width 100%
+  height r(60)
+  border: solid r(1) $wt
+  text-transform uppercase
+  bg($wt)
+  co($brown-light)
+  font-size: e(8)
+  font-weight: 600;
+  line-height: e(22)
+  letter-spacing: r(2.4)
+  padding r(18) 0
+  position relative
+  z-index 10
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  trans()
+
+  &:after
+    ba()
+    top 0
+    left 0
+    bottom 0
+    z-index -1
+    bg($dark)
+    width 0
+    trans()
+
+  +pad()
+    padding r(23) 0 r(24)
+  +mob()
+    max-width r(414)
+  +mmin(768px)
+    &:hover
+      co($wt)
+      border-color $dark
+      &:after
+        width 100%
+        left auto
+        right 0
+
+
+  &.btn-border
+    bg($tr)
+    border-color #dcc3bf
+
+    &:after
+      gradient()
+
+    +mmin(768px)
+      &:hover
+        border-color linear-gradient(to left, #bfa39f, #dcc3bf);
+        //gradient()
+
+  &.btn-border-wt
+    bg($tr)
+    co($wt)
+    border-color $wt30
+    &:after
+      bg($wt)
+    +mmin(768px)
+      &:hover
+        co($dark)
+        border-color $wt
+
+  &.btn-feedback
+    bg($gray-dark)
+    co($wt)
+    border-color $gray-dark
+    +mmin(768px)
+      &:hover
+        bg($dark)
+        border-color $dark
+
+  &.btn-dark
+    bg($dark)
+    co($wt)
+    border-color $dark
+    &:after
+      bg($gray-dark)
+    +mmin(768px)
+      &:hover
+        border-color $gray-dark
+
+  &.btn-transparent
+    bg($tr)
+    border-color $tr
+    co($wt)
+    &:after
+      display none
+    &:hover
+      color $wt60
+
+
+.btn-slider
+  position absolute
+  left r(156)
+  bottom r(156)
+  max-width r(300)
+  +pad()
+    bottom: -(r(17))
+    left: r(37)
+  +mob()
+    position relative
+    left r(15)
+    bottom 0
+
+
+
+.btn-center
+  mc()
+
+.btn-more
+  position relative
+  top -1.875rem
+  z-index 300
+  left -4.063rem

@@ -1,0 +1,91 @@
+.datepicker
+  text-transform uppercase
+
+.flatpickr-calendar
+  border-radius 0
+  border none
+  box-shadow none
+  padding r(48) r(21) r(50)
+  width r(290)
+  &:before, &:after
+    display none
+
+.flatpickr-month
+  text-align left
+
+.flatpickr-current-month
+  font-size: e(18)
+  text-align left
+  left r(8)
+  padding 0
+  span.cur-month
+    ml(0)
+    font-weight: bold;
+    line-height: 1.22;
+    letter-spacing: r(0.9)
+    color: $dark
+    &:hover
+      bg($tr)
+
+.dayContainer
+  width auto
+  min-width unset
+  max-width unset
+
+.flatpickr-current-month input.cur-year
+  display none
+
+.flatpickr-days
+  width 96%
+
+.flatpickr-day
+  font-size: e(10)
+  font-weight: 600;
+  line-height: 2.2;
+  letter-spacing: r(1.5)
+  color: $dark
+  max-width: r(31)
+  height: r(29)
+  border-radius 0
+  display flex
+  align-items center
+  justify-content center
+  border none
+  &.today
+    bg($tr)
+    &:hover
+      co($wt)
+      bg($dark)
+  &.selected
+    co($wt)
+    bg($gray)
+  &:hover
+    co($wt)
+    bg($dark)
+
+
+//
+span.flatpickr-weekday
+  font-size: e(10)
+  font-weight: 600;
+  line-height: 2.2;
+  letter-spacing: r(1.5)
+  color: $gray-dark
+  max-width: r(34)
+
+.flatpickr-months .flatpickr-prev-month, .flatpickr-months .flatpickr-next-month
+  line-height: r(3)
+  top r(43)
+  svg
+    width: r(14)
+    height: r(5)
+  &:hover
+    svg
+      fill $dark
+
+.flatpickr-months .flatpickr-next-month.flatpickr-next-month
+  right r(28)
+
+.flatpickr-months .flatpickr-prev-month.flatpickr-prev-month
+  left auto
+  right r(71)

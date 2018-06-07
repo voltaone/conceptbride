@@ -1,0 +1,69 @@
+mixin slider-look()
+    .slider.slider-look
+        div
+            .slide
+                +slider-look-slide()
+        div
+            .slide
+                +slider-look-slide()
+
+mixin slider-look-slide-content()
+    .col-md-7
+        h2.look-heading Total look spring/summer 2018
+
+        .slider-look__image-left
+            +info
+
+            +img('img/illus/look/look1.png')
+
+    .col-md-5
+        .slider-look__image-right
+            +img('img/illus/look/look2.png')
+
+        +btn('Смотреть коллекцию')
+
+
+mixin slider-look-slide()
+            .row
+                +slider-look-slide-content()
+
+
+mixin slider-look-slide-flip()
+            .row
+                .col-md-5
+                    .slider-look__image-right
+                        +img('img/illus/look/look2.png')
+
+                    +btn('Смотреть коллекцию')
+
+                .col-md-7
+                    h2.look-heading Total look spring/summer 2018
+
+                    .slider-look__image-left
+                        +info
+
+                        +img('img/illus/look/look1.png')
+
+
+mixin slider-look-slide-regular()
+            .row.collection-regular-row
+                +slider-look-slide-content()
+
+
+mixin slider-look-slide-flip-regular()
+            .row.collection-regular-row.collection-flip
+                .col-md-5.order-2.order-md-1
+                    .slider-look__image-right
+                        +img('img/illus/look/look2.png')
+
+                    +btn('Смотреть коллекцию')
+
+                .col-md-7
+                    h2.look-heading Total look spring/summer 2018
+
+                    .slider-look__image-left
+                        +info
+
+                        +img('img/illus/look/look1.png')
+
+

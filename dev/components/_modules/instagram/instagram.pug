@@ -1,0 +1,29 @@
+mixin slider-instagram()
+
+    .slider.slider-instagram
+        +slider-instagram-slide()
+        +slider-instagram-slide()
+
+//mixin slider-instagram-slide()
+//    div
+//        .slider-instagram__slide
+//            .animation-view
+//                +img('img/illus/instagram/instagram1.png', 'slider-instagram__slide_image image1 wow')
+//                .animation-view__wrapper.wow
+//            .animation-view
+//                +img('img/illus/instagram/instagram2.png', 'slider-instagram__slide_image image2 wow')
+//                .animation-view__wrapper.wow
+//            .animation-view
+//                +img('img/illus/instagram/instagram3.png', 'slider-instagram__slide_image image3 wow')
+//                .animation-view__wrapper.wow
+//            .animation-view
+//                +img('img/illus/instagram/instagram4.png', 'slider-instagram__slide_image image4 wow')
+//                .animation-view__wrapper.wow
+
+mixin slider-instagram-slide()
+    div
+        .slider-instagram__slide
+                +img('img/illus/instagram/instagram1.png', 'slider-instagram__slide_image image1 wow')
+                +img('img/illus/instagram/instagram2.png', 'slider-instagram__slide_image image2 wow')
+                +img('img/illus/instagram/instagram3.png', 'slider-instagram__slide_image image3 wow')
+                +img('img/illus/instagram/instagram4.png', 'slider-instagram__slide_image image4 wow')

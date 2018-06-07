@@ -1,0 +1,87 @@
+.catalog-row
+
+  .catalog-col
+    +xl()
+      padding-left 0
+      padding-right 0
+
+    .cart-product
+      mb(113)
+      +pad()
+        .cart__front
+          pr(50)
+          pb(120)
+          pl(50)
+
+
+    &:nth-child(4n+1)
+      +xl()
+        flex 0 0 64.0625vw
+        max-width 64.0625vw
+      +pad()
+        flex 0 0 100%
+        max-width 100%
+        margin-left 8.333333%
+
+    &:nth-child(4n+2)
+      +xl()
+        flex 0 0 35.9375vw
+        max-width 35.9375vw
+      +pad()
+        flex 0 0 100%
+        max-width 100%
+        margin-left 16.66666666%
+      +land()
+        .cart-product
+          float right
+
+    &:nth-child(4n+3)
+      +xl()
+        flex 0 0 35.9375vw
+        max-width 35.9375vw
+      +pad()
+        flex 0 0 100%
+        max-width 100%
+        margin-left 8.333333%
+    &:nth-child(4n+4)
+      +xl()
+        flex 0 0 64.0625vw
+        max-width 64.0625vw
+      +pad()
+        flex 0 0 100%
+        max-width 100%
+        margin-left 16.66666666%
+      +land()
+        .cart-product
+          float right
+
+
+
+
+
+
+
+
+
+
+
+    &:nth-child(4n+2)
+      .cart-product
+        +xl()
+          margin-left -5.46875vw
+          top r(316)
+
+    &:nth-child(4n+3)
+      .cart-product
+        +xl()
+          margin-left 4.53125vw
+
+    &:nth-child(4n+4)
+      .cart-product
+        +xl()
+          top r(287)
+
+    &:last-child
+      .cart-product
+        +xl()
+          mb(0)
