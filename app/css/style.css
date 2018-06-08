@@ -555,6 +555,7 @@ header {
 }
 .container-header .row {
 	padding-top: 3.875rem;
+	width: 100%;
 }
 @media (max-width: 767px) {
 	.container-header .row {
@@ -586,6 +587,9 @@ header {
 	width: 100%;
 	position: relative;
 	z-index: 10;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	    flex: 0 0 auto;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
 	.header-index__back img {
@@ -4440,4 +4444,17 @@ p, h1, h2, a, h3, h4, .cart__front_designer {
 	.collection-regular-row.collection-flip .slider-look__image-left {
 		left: -5.3125rem;
 	}
+}
+.look {
+	position: relative;
+	background-color: #f1eef4;
+	padding: 6.875rem 4.8125rem 7.3125rem 6.3125rem;
+}
+.look p {
+	color: #87828c;
+}
+.look .btn {
+	position: absolute;
+	bottom: -1.875rem;
+	left: 6.3125rem;
 }

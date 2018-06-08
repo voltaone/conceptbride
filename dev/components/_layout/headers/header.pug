@@ -15,6 +15,18 @@ mixin header-index()
                         +btn('выбрать платье')
                         +link-video('смотреть видео')
 
+mixin header-look()
+
+    header(data-bg='#a19d9c').header-index.header-look.body-back
+
+        .header-index__back
+            +img('img/illus/video/video4.png')
+
+        .container.container-header
+            .row
+                .offset-md-1.col-md-11.offset-xl-3.col-xl-9
+                    h1 Total look spring/summer 2017
+
 mixin header-about()
 
     header(data-bg='#a19d9c').header-index.body-back

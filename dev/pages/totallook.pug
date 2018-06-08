@@ -1,0 +1,40 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Concept Bride - Главная страница
+
+block content
+
+    +header-look()
+
+
+
+
+    section(data-bg='#a19d9c').body-back.section-look
+        .container
+            .row
+                .col-6.rellax(data-rellax-speed='-.7')
+                    +look('В коллекции представлены образцы которые станут лучшим уркашением к платьям из весенней коллекции 2017 года', 'Добавить к примерке')
+                .col-12
+                    .look-gallery
+                        +img('img/illus/look/look3.png')
+                        +img('img/illus/look/look4.png')
+
+            .row
+                .col-12
+                    .look-gallery
+                        +img('img/illus/look/look5.png')
+                        +img('img/illus/look/look6.png')
+
+            .row
+                .col-12
+                    .look-gallery
+                        +img('img/illus/look/look7.png')
+                        +img('img/illus/look/look8.png')
+
+
+
+
+
+

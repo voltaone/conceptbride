@@ -8,7 +8,7 @@
 
         menuTrigger: $('#menu-trigger'),
         menuBucket: $('#menu-bucket'),
-        mebuLang: $('.navbar__lang'),
+        menuLang: $('.navbar__lang'),
 
         selectChosen: $(".chosen-select"),
         selectSelect2: $('.select2-select'),
@@ -91,20 +91,23 @@
     $(window).on('load resize', function () {
         if (window.matchMedia("(max-width: 767px)").matches) {
 
-            DOMs.mebuLang.prependTo('.navbar__panel .container .row');
+            DOMs.menuLang.prependTo('.navbar__panel .container .row');
 
-        } else if (window.matchMedia("(min-width: 767px)").matches) {
+        }
+        if (window.matchMedia("(min-width: 767px)").matches) {
 
-            // DOMs.mebuLang.prependTo('.navbar__panel .container .row');
+            DOMs.menuLang.insertAfter('.navbar__menu');
 
-        } else if (window.matchMedia("(min-width: 1200px)").matches) {
+        }
+        if (window.matchMedia("(min-width: 1200px)").matches) {
 
-            $('.rellax').rewRellax();
+            $(DOMs.rellax).rewRellax();
 
             new Rellax(DOMs.rellax);
 
 
-        } else if (window.matchMedia("(min-width: 568px)").matches) {
+        }
+        if (window.matchMedia("(min-width: 568px)").matches) {
 
             let max = $(DOMs.gridMasonryItems[0]).outerHeight();
 

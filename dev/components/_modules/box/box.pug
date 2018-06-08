@@ -39,3 +39,14 @@ mixin box-link(heading, text, link)
 
             +link-overline(link)
         .animation-view__wrapper.wow
+
+mixin look(text, btn)
+    .look
+        p= text
+        +btn(btn)
+
+mixin look-heading(heading, text, btn)
+    .look
+        h2= heading
+        p= text
+        +btn(btn)
